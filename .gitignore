@@ -1,0 +1,22 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Logs e cache
+*.log
+.cache/
+.parcel-cache/
+
+# Node.js (se tiver)
+node_modules/
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build (se tiver)
+dist/
+build/
