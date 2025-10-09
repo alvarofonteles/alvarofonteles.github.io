@@ -34,7 +34,7 @@ const PROJECTS_DATA = [
     },
     {
         id: 4,
-        title: "⚡ Pipeline ETL com PySpark",
+        title: "⚗️ Pipeline ETL com PySpark",
         description: "Desenvolvimento de pipeline distribuído para processamento de dados em larga escala com qualidade, monitoramento e tratamento de erros.",
         technologies: ["PySpark", "Delta Lake", "Python", "Data Quality", "ETL Patterns"],
         link: [],

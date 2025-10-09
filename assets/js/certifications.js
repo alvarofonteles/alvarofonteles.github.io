@@ -1,23 +1,20 @@
 // ===== CARREGAR CERTIFICAÇÕES =====
 function loadCertifications() {
     const container = document.getElementById('certifications-container');
-    console.log('📜 Carregando certificações...', container);
     
     if (!container) {
-        console.error('❌ certifications-container não encontrado!');
         return;
     }
     
     const featuredCerts = CERTIFICATIONS_DATA.filter(cert => cert.featured);
-    console.log('✅ Certificações em destaque:', featuredCerts.length);
     
     container.innerHTML = featuredCerts.map(cert => `
         <div class="certification-item" data-cert-id="${cert.id}">
             <div class="certification-header">
                 <h3>${cert.title}</h3>
                 <div class="certification-meta">
-                    <span class="certification-institution">${cert.institution}</span>
                     <span class="certification-date">${cert.period}</span>
+                    <span class="certification-institution">${cert.institution}</span>
                     <span class="certification-status status-${cert.status}">
                         ${getStatusText(cert.status)}
                     </span>
@@ -43,9 +40,18 @@ function loadCertifications() {
                 </div>
             ` : ''}
         </div>
-    `).join('');
-    
-    console.log('✅ Certificações carregadas com sucesso!');
+    `).join('');    
+}
+
+// ===== TEXTO DO STATUS =====
+function getStatusText(status) {
+    const statusMap = {
+        'completed': '✅ Concluído',
+        'in-progress': '🔄 Em Andamento',
+        'planned': '📅 Planejado',
+        'paused': '🔏 Trancado'
+    };
+    return statusMap[status] || status;
 }
 
 // Exportar funções

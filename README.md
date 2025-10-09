@@ -54,24 +54,24 @@ Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5,
 ```
 portfolio-template/
 │
-├── 📄 index.html              # Página principal
+├── 📄 index.html               # Página principal
 ├── 📁 assets/
 │   ├── 📁 css/
-│   │   ├── style.css          # Estilos principais + variáveis CSS
-│   │   └── responsive.css     # Media queries + mobile
+│   │   ├── style.css           # Estilos principais + variáveis CSS
+│   │   └── responsive.css      # Media queries + mobile
 │   ├── 📁 js/
-│   │   ├── script.js          # Core application e inicialização
-│   │   ├── skills.js          # Gerenciamento de habilidades
-│   │   ├── certifications.js  # Gerenciamento de certificações
-│   │   ├── experience.js      # Timeline profissional
-│   │   ├── projects.js        # Gerenciamento de projetos
-│   │   ├── education.js       # Gerenciamento de formação acadêmica
-│   │   └── 📁 data/           # Dados estruturados
+│   │   ├── script.js           # Core application e inicialização
+│   │   ├── skills.js           # Gerenciamento de habilidades
+│   │   ├── certifications.js   # Gerenciamento de certificações
+│   │   ├── experiences.js      # Timeline profissional
+│   │   ├── projects.js         # Gerenciamento de projetos
+│   │   ├── educations.js       # Gerenciamento de formação acadêmica
+│   │   └── 📁 data/            # Dados estruturados
 │   │       ├── skills-data.js
 │   │       ├── certifications-data.js
-│   │       ├── experience-data.js
+│   │       ├── experiences-data.js
 │   │       ├── projects-data.js
-│   │       └── education-data.js
+│   │       └── educations-data.js
 │   └── 📁 images/
 │       ├── profile.jpg        # Profile picture
 │       └── 📁 projects/       # Project screenshots
@@ -151,7 +151,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para de
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
----
 
 **Desenvolvido por [Álvaro 👨‍💻🎲🇧🇷](https://github.com/alvarofonteles)**
 

@@ -1,4 +1,4 @@
-/* ===== RESPONSIVIDADE (responsive.css) ===== */
+/* ===== RESPONSIVIDADE COMPLETA (responsive.css) ===== */
 
 /* Tablets */
 @media (max-width: 1024px) {
@@ -19,46 +19,49 @@
     }
 }
 
-/* ===== NAVBAR UNIVERSAL - FUNCIONA EM TODAS AS TELAS ===== */
-
-/* Desktop Grande - Acima de 1024px */
-@media (min-width: 1025px) {
-    .navbar a {
-        margin: 0 1.5rem;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-    }
-}
-
-/* Desktop Médio - 901px a 1024px */
-@media (min-width: 901px) and (max-width: 1024px) {
+/* Navbar para diferentes tamanhos de tela */
+@media (min-width: 1201px) {
     .navbar a {
         margin: 0 1.2rem;
-        padding: 0.5rem 0.9rem;
+        padding: 0.5rem 0.8rem;
         font-size: 0.95rem;
     }
 }
 
-/* Desktop Pequeno/Tablet Grande - 851px a 900px */
-@media (min-width: 851px) and (max-width: 900px) {
+@media (min-width: 1025px) and (max-width: 1200px) {
     .navbar a {
-        margin: 0 0.8rem;
-        padding: 0.4rem 0.8rem;
+        margin: 0 1rem;
+        padding: 0.4rem 0.7rem;
         font-size: 0.9rem;
     }
 }
 
-/* Tablet Pequeno - 769px a 850px */
-@media (min-width: 769px) and (max-width: 850px) {
+@media (min-width: 901px) and (max-width: 1024px) {
     .navbar a {
-        margin: 0 0.6rem;
-        padding: 0.3rem 0.7rem;
+        margin: 0 0.8rem;
+        padding: 0.4rem 0.6rem;
         font-size: 0.85rem;
     }
+}
 
+@media (min-width: 851px) and (max-width: 900px) {
+    .navbar a {
+        margin: 0 0.6rem;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 850px) {
+    .navbar a {
+        margin: 0 0.4rem;
+        padding: 0.3rem 0.4rem;
+        font-size: 0.75rem;
+    }
+    
     .navbar .container {
-        flex-wrap: nowrap;
-        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.2rem;
     }
 }
 
@@ -69,7 +72,6 @@
         padding: 0 15px;
     }
 
-    /* HEADER MAIS COMPACTO */
     header {
         padding: 2rem 0;
         text-align: center;
@@ -94,10 +96,8 @@
     .tagline {
         font-size: 0.9rem;
         padding: 0.6rem 1rem;
-        display: inline-block;
     }
 
-    /* NAVBAR CORRIGIDA - MAIS COMPACTA */
     .navbar {
         padding: 0.5rem 0;
     }
@@ -122,13 +122,7 @@
 
     h2 {
         font-size: 1.5rem;
-    }
-
-    .skills-grid,
-    .projects-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
+    }    
 
     .highlights {
         grid-template-columns: repeat(2, 1fr);
@@ -143,13 +137,95 @@
         font-size: 1.5rem;
     }
 
-    .timeline {
-        padding-left: 1.5rem;
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-item {
+        padding: 1rem;
     }
 
-    .timeline-item::before {
-        left: -1.8rem;
+    .section-subtitle {
+        font-size: 1rem;
+        padding-left: 1rem;
     }
+
+    .contact-grid,
+    .skills-grid,
+    .education-grid,
+    .certifications-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .education-item,
+    .certification-item {
+        padding: 1rem;
+        margin: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        min-width: 0;
+    }
+    
+    .education-item h3,
+    .certification-item h3 {
+        font-size: 1.1rem;
+        line-height: 1.3;
+        word-break: break-word;
+    }
+
+    .education-meta,
+    .certification-meta {
+        flex-direction: row;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+    }
+    
+    .education-date,
+    .certification-date {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+    
+    .education-description,
+    .certification-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .education-technologies h4,
+    .certification-technologies h4 {
+        font-size: 0.9rem;
+    }
+
+    .education-links,
+    .certification-links,
+    .project-links {        
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .education-link,
+    .certification-link,
+    .project-link {        
+        text-align: left;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        width: auto;
+        display: inline-block;
+    }
+    
+    .tech-tags {
+        gap: 0.3rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }    
 }
 
 /* Celulares */
@@ -176,7 +252,6 @@
         padding: 0.5rem 0.8rem;
     }
 
-    /* NAVBAR AINDA MAIS COMPACTA NO CELULAR */
     .navbar {
         padding: 0.3rem 0;
     }
@@ -201,6 +276,9 @@
 
     .skill-category,
     .project,
+    .experience-item, 
+    .education-item,
+    .certification-item,
     .contact-item {
         padding: 1rem;
     }
@@ -214,8 +292,49 @@
         padding: 0.2rem 0.6rem;
     }
 
-    .timeline-item {
-        padding: 1rem;
+    .experience-item {
+        padding: 0.8rem;
+    }
+
+    .education-item,
+    .certification-item {
+        padding: 0.8rem;
+    }
+    
+    .education-item h3,
+    .certification-item h3 {
+        font-size: 1rem;
+    }
+    
+    .education-meta,
+    .certification-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    
+    .education-date,
+    .certification-date {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.5rem;
+    }
+
+    .education-links,
+    .certification-links,
+    .project-links {
+        gap: 0.3rem;
+    }
+    
+    .education-link,
+    .certification-link,
+    .project-link {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.4rem;
     }
 }
 
@@ -264,7 +383,6 @@
         margin-bottom: 0.5rem;
     }
 
-    /* NAVBAR COMPACTA EM LANDSCAPE */
     .navbar {
         padding: 0.3rem 0;
     }
@@ -272,7 +390,6 @@
 
 /* Impressão */
 @media print {
-
     .navbar,
     .project-link,
     footer {
@@ -295,24 +412,12 @@
     }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .section-subtitle {
-        font-size: 1rem;
-        padding-left: 1rem;
-    }
-}
-
-/* ===== MENU HAMBURGER ===== */
-
-/* Esconde o menu normal no mobile */
+/* Menu Hamburger para Mobile */
 @media (max-width: 768px) {
     .navbar .container {
         display: none;
-        /* Esconde o menu original */
     }
 
-    /* Menu Hamburger */
     .menu-toggle {
         display: block;
         position: fixed;
@@ -354,7 +459,6 @@
         top: 16px;
     }
 
-    /* Menu mobile */
     .mobile-menu {
         position: fixed;
         top: 0;
@@ -387,7 +491,6 @@
         color: var(--primary-color);
     }
 
-    /* Overlay */
     .menu-overlay {
         position: fixed;
         top: 0;
@@ -407,9 +510,7 @@
     }
 }
 
-/* Mostra o menu normal em desktop */
 @media (min-width: 769px) {
-
     .menu-toggle,
     .mobile-menu,
     .menu-overlay {

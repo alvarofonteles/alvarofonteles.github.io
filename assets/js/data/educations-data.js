@@ -8,6 +8,9 @@ const EDUCATIONS_DATA = [
         status: "completed",
         description: "Formação em desenvolvimento de software, algoritmos e engenharia de software.",
         technologies: ["Java", "SQL", "Redes", "Engenharia de Software", "Gestão de Projetos"],
+        links: [
+            { name: "Diploma", url: "#formacao" }
+        ],
         featured: true
     },
     {
@@ -18,6 +21,7 @@ const EDUCATIONS_DATA = [
         status: "paused",
         description: "Especialização em arquitetura de software, qualidade e processos de desenvolvimento.",
         technologies: ["Arquitetura de Software", "DevOps", "Qualidade", "Metodologias Ágeis"],
+        links: [],
         featured: true
     },
     {
@@ -28,6 +32,7 @@ const EDUCATIONS_DATA = [
         status: "paused",
         description: "Pós-graduação em gestão de tecnologia da informação e estratégia empresarial.",
         technologies: ["Gestão de TI", "Estratégia", "Governança", "Liderança"],
+        links: [],
         featured: true
     },
     {
@@ -38,6 +43,7 @@ const EDUCATIONS_DATA = [
         status: "completed",
         description: "Curso técnico em informática com foco em hardware, software e redes.",
         technologies: ["Hardware", "Redes", "Sistemas Operacionais", "Manutenção"],
+        links: [],
         featured: true
     }
 ];

@@ -21,30 +21,27 @@ function initializeApp() {
     loadExperiences();
     loadEducations();
     loadCertifications();
-
-    console.log('🚀 Portfolio Alvaro - Carregado!');
 }
 
 // ===== ANIMAÇÕES DE SCROLL =====
 function initScrollAnimations() {
     if (!CONFIG.enableAnimations) return;
-
-    const observerOptions = {
-        threshold: CONFIG.animationThreshold,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+    
+    // SIMPLES: Tornar todas as seções visíveis após carregar
+    setTimeout(() => {
+        document.querySelectorAll('.fade-in').forEach(section => {
+            section.classList.add('visible');
+        });
+    }, 1000);
+    
+    // ANIMAÇÃO NO SCROLL (opcional e simples)
+    window.addEventListener('scroll', () => {
+        document.querySelectorAll('.fade-in:not(.visible)').forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.8) {
+                section.classList.add('visible');
             }
         });
-    }, observerOptions);
-
-    // Observar elementos com classe fade-in
-    document.querySelectorAll('.fade-in').forEach(element => {
-        observer.observe(element);
     });
 }
 
@@ -136,8 +133,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (typeof loadSkillsDivided === 'function') loadSkillsDivided();
     if (typeof loadProjects === 'function') loadProjects();
-    if (typeof loadExperience === 'function') loadExperiences();
-    if (typeof loadEducation === 'function') loadEducations();
+    if (typeof loadExperiences === 'function') loadExperiences();
+    if (typeof loadEducations === 'function') loadEducations();
     if (typeof loadCertifications === 'function') loadCertifications();
 
     // Fecha menu ao clicar em links

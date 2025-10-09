@@ -1,23 +1,20 @@
 // ===== CARREGAR FORMAÇÃO =====
 function loadEducations() {
     const container = document.getElementById('education-container');
-    console.log('🎓 Carregando formação...', container);
-
+    
     if (!container) {
-        console.error('❌ education-container não encontrado!');
         return;
     }
 
     const featuredEducation = EDUCATIONS_DATA.filter(edu => edu.featured);
-    console.log('✅ Formações em destaque:', featuredEducation.length);
-
+    
     container.innerHTML = featuredEducation.map(edu => `
         <div class="education-item" data-edu-id="${edu.id}">
             <div class="education-header">
                 <h3>${edu.title}</h3>
                 <div class="education-meta">
-                    <span class="education-institution">${edu.institution}</span>
                     <span class="education-date">${edu.period}</span>
+                    <span class="education-institution">${edu.institution}</span>
                     <span class="education-status status-${edu.status}">
                         ${getStatusText(edu.status)}
                     </span>
@@ -32,10 +29,29 @@ function loadEducations() {
                     ${edu.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
             </div>
+            
+            ${edu.links ? `
+                <div class="education-links">
+                    ${edu.links.map(link => `
+                        <a href="${link.url}" target="_blank" class="education-link">
+                            📄 ${link.name}
+                        </a>
+                    `).join('')}
+                </div>
+            ` : ''}
         </div>
     `).join('');
+}
 
-    console.log('✅ Formação carregada com sucesso!');
+// ===== TEXTO DO STATUS =====
+function getStatusText(status) {
+    const statusMap = {
+        'completed': '✅ Concluído',
+        'in-progress': '🔄 Em Andamento',
+        'planned': '📅 Planejado',
+        'paused': '🔏 Parado'
+    };
+    return statusMap[status] || status;
 }
 
 // Exportar funções

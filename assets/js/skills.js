@@ -1,7 +1,5 @@
 // ===== CARREGAMENTO DE HABILIDADES DIVIDIDAS =====
 function loadSkillsDivided() {
-    console.log('🛠️ Carregando habilidades...');
-
     // Stack Profissional (Atual)
     const containerAtual = document.getElementById('skills-current-stack');
     if (containerAtual) {
@@ -13,7 +11,6 @@ function loadSkillsDivided() {
                 </ul>
             </div>
         `).join('');
-        console.log('✅ Habilidades atuais carregadas');
     }
 
     // Em Transição & Aprendizado
@@ -27,10 +24,7 @@ function loadSkillsDivided() {
                 </ul>
             </div>
         `).join('');
-        console.log('✅ Habilidades em transição carregadas');
     }
-
-    console.log('🎯 Todas as habilidades carregadas com sucesso!');
 }
 
 // Exportar funções
