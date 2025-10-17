@@ -6,7 +6,8 @@ const PROJECTS_DATA = [
         description: "Estudo dos conceitos básicos de Python: estruturas de dados, funções, OOP, tratamento de erros e boas práticas.",
         technologies: ["Python", "OOP", "Data Structures", "Error Handling", "PEP8"],
         links: [
-            { name: "Téo Me Why", url: "https://github.com/alvarofonteles/python-teo" },
+            { name: "python-teo", url: "https://github.com/alvarofonteles/python-teo" },
+            { name: "py-functions-duno", url: "https://github.com/alvarofonteles/py-functions-duno" },
         ],
         featured: true,
         status: "in-progress",

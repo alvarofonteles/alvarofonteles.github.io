@@ -352,27 +352,36 @@ h2 {
     font-weight: 500;
 }
 
-.project-links {
+.project-links,
+.education-links,
+.certification-links {
     display: flex;
-    gap: 10px;
+    gap: 8px; /* Reduz o espaçamento */
     flex-wrap: wrap;
     margin-top: 1rem;
 }
 
-.project-link {
+.project-link,
+.education-link,
+.certification-link {
     display: inline-block;
     background: var(--dark-color);
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem; /* Reduz o padding */
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Reduz a fonte */
+    line-height: 1.2; /* Melhora o alinhamento */    
+    border: none; /* Remove borda padrão */
+    outline: none; /* Remove outline azul */
+    cursor: pointer;
 }
 
-.project-link:hover {
-    background: var(--primary-color);
+.project-link:hover,
+.education-link:hover,
+.certification-link:hover {
     transform: translateY(-2px);
     box-shadow: var(--box-shadow);
 }
@@ -380,7 +389,7 @@ h2 {
 /* ===== EXPERIÊNCIA ===== */
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
 }
@@ -551,31 +560,6 @@ h2 {
     font-weight: 600;
 }
 
-.education-links {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-}
-
-.education-link {
-    display: inline-block;
-    background: var(--dark-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-    font-size: 0.9rem;
-}
-
-.education-link:hover {
-    background: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: var(--box-shadow);
-}
-
 /* ===== CERTIFICAÇÕES ===== */
 .certifications-grid {
     display: grid;
@@ -655,31 +639,6 @@ h2 {
     margin-bottom: 0.5rem;
     color: var(--dark-color);
     font-weight: 600;
-}
-
-.certification-links {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-}
-
-.certification-link {
-    display: inline-block;
-    background: var(--dark-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-    font-size: 0.9rem;
-}
-
-.certification-link:hover {
-    background: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: var(--box-shadow);
 }
 
 /* ===== CONTATO ===== */
