@@ -1,13 +1,14 @@
-// ===== DADOS DOS PROJETOS - ENGENHARIA DE DADOS MODERNA =====
+// ===== DADOS DOS PROJETOS - ROADMAP DATA ENGINEER =====
 const PROJECTS_DATA = [
     {
         id: 1,
-        title: "🐍 Fundamentos Python",
-        description: "Estudo dos conceitos básicos de Python: estruturas de dados, funções, OOP, tratamento de erros e boas práticas.",
-        technologies: ["Python", "OOP", "Data Structures", "Error Handling", "PEP8"],
+        title: "🐍 FASE 1 - Python Fundamentos",
+        description: "Base sólida de programação Python para Data Engineering: funções, OOP, collections, APIs e programação concorrente.",
+        technologies: ["Python", "OOP", "Data Structures", "Functions", "APIs", "Concurrency", "Dataclasses"],
         links: [
             { name: "python-teo", url: "https://github.com/alvarofonteles/python-teo" },
             { name: "py-functions-duno", url: "https://github.com/alvarofonteles/py-functions-duno" },
+            { name: "py-collections-duno", url: "https://github.com/alvarofonteles/py-collections-duno" }
         ],
         featured: true,
         status: "in-progress",
@@ -15,80 +16,82 @@ const PROJECTS_DATA = [
     },
     {
         id: 2,
-        title: "📊 Análise de Dados com Pandas",
-        description: "Exploração e manipulação de datasets com Pandas: limpeza, transformação, agregação e visualização de dados.",
-        technologies: ["Python", "Pandas", "Data Cleaning", "Data Analysis", "Data Visualization", "Matplotlib"],
-        link: [],
+        title: "📊 FASE 2 - Pandas + ETL",
+        description: "Manipulação de dados em memória com Pandas: ETL de datasets médios, análise exploratória e preparação para PySpark.",
+        technologies: ["Python", "Pandas", "ETL", "Data Analysis", "Data Cleaning", "Data Visualization"],
+        links: [
+            { name: "pandas-teo", url: "https://github.com/alvarofonteles/pandas-teo" }
+        ],
         featured: true,
         status: "planned",
         image: "assets/images/projects/pandas-analysis.jpg"
     },
     {
         id: 3,
-        title: "⚡ Introdução ao PySpark",
-        description: "Primeiros passos com PySpark: RDDs, DataFrames, operações básicas e processamento distribuído.",
-        technologies: ["PySpark", "DataFrames", "Spark SQL", "Distributed Computing"],
-        link: [],
+        title: "⚡ FASE 3 - PySpark Fundamentos",
+        description: "Processamento distribuído com PySpark: DataFrames, Spark SQL e transição suave de Pandas para Big Data.",
+        technologies: ["PySpark", "DataFrames", "Spark SQL", "Distributed Computing", "ETL"],
+        links: [],
         featured: true,
         status: "planned",
         image: "assets/images/projects/pyspark-intro.jpg"
     },
     {
         id: 4,
-        title: "⚗️ Pipeline ETL com PySpark",
-        description: "Desenvolvimento de pipeline distribuído para processamento de dados em larga escala com qualidade, monitoramento e tratamento de erros.",
-        technologies: ["PySpark", "Delta Lake", "Python", "Data Quality", "ETL Patterns"],
-        link: [],
+        title: "⚡ FASE 4 - PySpark + Delta Lake",
+        description: "Pipelines production-ready com PySpark avançado: otimização, Delta Lake e qualidade de dados em escala.",
+        technologies: ["PySpark", "Delta Lake", "Data Quality", "Performance", "Optimization"],
+        links: [],
         featured: true,
         status: "planned",
         image: "assets/images/projects/pyspark-pipeline.jpg"
     },
     {
         id: 5,
-        title: "🏗️ Arquitetura Data Lakehouse",
-        description: "Estudo de arquitetura moderna com Delta Lake, medallion architecture (Bronze → Silver → Gold) e governança de dados.",
-        technologies: ["Delta Lake", "Medallion Architecture", "Data Governance", "AWS S3", "Data Lakes", "ACID Transactions", "Schema Evolution"],
-        link: [],
+        title: "🏗️ FASE 5 - Lakehouse Architecture",
+        description: "Arquitetura Lakehouse moderna: Data Lake confiável com ACID transactions, schema evolution e medallion architecture.",
+        technologies: ["Delta Lake", "Medallion Architecture", "ACID Transactions", "Schema Evolution", "Data Governance"],
+        links: [],
         featured: true,
         status: "planned",
         image: "assets/images/projects/data-lakehouse.jpg"
     },
     {
         id: 6,
-        title: "🔄 Orquestração com Airflow",
-        description: "Implementação de DAGs para orquestração de pipelines de dados com monitoramento, retry policies e alertas.",
-        technologies: ["Airflow", "DAGs", "Python", "Monitoring", "ETL Orchestration", "Operators"],
-        link: [],
+        title: "🔄 FASE 6 - Airflow Orchestration",
+        description: "Orchestration de pipelines com Airflow: agendamento, monitoramento, dependencies e pipelines production-ready.",
+        technologies: ["Airflow", "DAGs", "Orchestration", "Monitoring", "Scheduling"],
+        links: [],
         featured: true,
         status: "planned",
         image: "assets/images/projects/airflow-dags.jpg"
     },
     {
         id: 7,
-        title: "☁️ AWS Data Ecosystem",
-        description: "Estudo da stack completa AWS para dados: S3, Glue, EMR, Athena, Redshift e Step Functions.",
-        technologies: ["AWS S3", "AWS Glue", "EMR", "Athena", "Step Functions", "Redshift", "IAM", "CloudWatch"],
-        link: [],
+        title: "☁️ FASE 7 - AWS Data Stack",
+        description: "Cloud computing para dados: S3 (storage), Glue (ETL serverless), Athena (query) e integração PySpark com AWS.",
+        technologies: ["AWS S3", "AWS Glue", "AWS Athena", "boto3", "Cloud Computing"],
+        links: [],
         featured: true,
         status: "planned",
         image: "assets/images/projects/aws-data-stack.jpg"
     },
     {
         id: 8,
-        title: "📊 Transformações com dbt",
-        description: "Modelagem e transformação de dados com dbt (data build tool) seguindo boas práticas de engenharia de dados.",
-        technologies: ["dbt", "SQL", "Data Modeling", "Testing", "Documentation"],
-        link: [],
+        title: "📊 FASE 8 - dbt Analytics Engineering",
+        description: "Engenharia analytics moderna: camada transformação com dbt, documentação, testes e data quality.",
+        technologies: ["dbt", "Data Transformation", "Analytics Engineering", "Documentation", "Testing"],
+        links: [],
         featured: true,
         status: "planned",
         image: "assets/images/projects/dbt-transformations.jpg"
     },
     {
         id: 9,
-        title: "🔍 Databricks & Spark SQL",
-        description: "Exploração da plataforma Databricks para processamento distribuído e análises com Spark SQL.",
-        technologies: ["Databricks", "Spark SQL", "Delta Lake", "Data Engineering", "Notebooks", "Workflows"],
-        link: [],
+        title: "🔍 FASE 9 - Databricks Platform",
+        description: "Plataforma enterprise completa: Lakehouse unified, CI/CD, governance e Unity Catalog.",
+        technologies: ["Databricks", "Unity Catalog", "Spark SQL", "Workflows", "Data Governance"],
+        links: [],
         featured: true,
         status: "planned",
         image: "assets/images/projects/databricks-spark.jpg"

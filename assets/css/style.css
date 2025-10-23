@@ -210,7 +210,7 @@ h2 {
     padding: 0.3rem 0;
     position: relative;
     padding-left: 1.2rem;
-    color: var(--text-color);
+    color: var(--text-light);
     font-weight: 500;
 }
 
@@ -354,16 +354,18 @@ h2 {
 
 .project-links,
 .education-links,
-.certification-links {
+.certification-links,
+.contact-links {
     display: flex;
     gap: 8px; /* Reduz o espaçamento */
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .project-link,
 .education-link,
-.certification-link {
+.certification-link,
+.contact-link {
     display: inline-block;
     background: var(--dark-color);
     color: white;
@@ -381,7 +383,8 @@ h2 {
 
 .project-link:hover,
 .education-link:hover,
-.certification-link:hover {
+.certification-link:hover,
+.contact-link:hover {
     transform: translateY(-2px);
     box-shadow: var(--box-shadow);
 }
@@ -433,15 +436,15 @@ h2 {
 }
 
 .experience-company {
-    color: var(--text-light);
+    color: var(--dark-color);
     font-weight: 500;
     font-style: italic;
 }
 
 .experience-description {
-    color: var(--text-color);
+    color: var(--text-light);
     margin-bottom: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: 500;
 }
 
@@ -467,7 +470,7 @@ h2 {
     padding: 0.3rem 0;
     position: relative;
     padding-left: 1.2rem;
-    color: var(--text-color);
+    color: var(--text-light);
     font-weight: 500;
 }
 
@@ -649,6 +652,23 @@ h2 {
     margin-top: 1rem;
 }
 
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    border-left: 4px solid #FFD700; /* AMARELO OURO */
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
+}
+
 .contact-icon {
     width: 40px;
     height: 40px;
@@ -657,50 +677,21 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 0.5rem;
+    flex-shrink: 0;
     font-size: 1.2rem;
 }
 
-.contact-item {
-    text-align: center;
-    padding: 1rem;
-    background: var(--light-color);
-    border-radius: var(--border-radius);
-    transition: var(--transition);
-    border-left: 4px solid #FFD700; /* AMARELO OURO */
+.contact-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
-.contact-item h3 {
+.contact-info h3 {
+    color: var(--dark-color);
     margin-bottom: 0.3rem;
     font-size: 1rem;
-}
-
-.contact-item a {
-    font-size: 0.9rem;
-}
-
-.contact-item:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--box-shadow);
-}
-
-.contact-item h3 {
-    color: var(--dark-color);
-    margin-bottom: 0.8rem;
-    font-size: 1.2rem;
     font-weight: 600;
-}
-
-.contact-item a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.contact-item a:hover {
-    color: var(--secondary-color);
-    text-decoration: underline;
 }
 
 /* ===== FOOTER ===== */
