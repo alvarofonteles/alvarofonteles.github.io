@@ -8,7 +8,7 @@ const PROJECTS_DATA = [
         links: [
             { 
                 name: "👁️ Ver Estrutura Completa", 
-                url: "https://1drv.ms/f/c/0cc82fec9c1ab050/Eo_W8jMbdThMmQ6M7r7eBewBs6smP6pFyxXkWvkRj7Qfhg?e=pmkQYn" 
+                url: "https://1drv.ms/f/c/0cc82fec9c1ab050/Ej_zAkJcDsxPpKpQkODTdqYBUnji_yfcbF2PlTOsoQmfOA" 
             }
         ],
         featured: true,
@@ -53,7 +53,7 @@ const PROJECTS_DATA = [
     },
     {
         id: 4,
-        title: "⚡ FASE 4 - PySpark + Delta Lake",
+        title: "⚡ FASE 4 - PySpark Avançado + Delta Lake",
         description: "Pipelines production-ready com PySpark avançado: otimização, Delta Lake e qualidade de dados em escala.",
         technologies: ["PySpark", "Delta Lake", "Data Quality", "Performance", "Optimization"],
         links: [],
@@ -95,7 +95,7 @@ const PROJECTS_DATA = [
         id: 8,
         title: "📊 FASE 8 - dbt Analytics Engineering",
         description: "Engenharia analytics moderna: camada transformação com dbt, documentação, testes e data quality.",
-        technologies: ["dbt", "Data Transformation", "Analytics Engineering", "Documentation", "Testing"],
+        technologies: ["dbt", "Data Transformation", "Analytics Engineering", "Documentation", "Testing", "Data Quality"],
         links: [],
         featured: true,
         status: "planned",

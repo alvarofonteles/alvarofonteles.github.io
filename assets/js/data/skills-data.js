@@ -3,54 +3,44 @@ const SKILLS_DATA = {
     atual: [
         {
             category: "🗄️ Banco de Dados Oracle",
-            skills: ["Oracle Database", "PL/SQL", "SQL Avançado", "Query Optimization", "Stored Procedures", "Data Modeling"]
+            skills: [
+                { name: "Oracle Database", level: 95 },
+                { name: "PL/SQL Avançado", level: 90 },
+                { name: "Performance Tuning", level: 85 },
+                { name: "Database Modeling", level: 80 },
+                { name: "Procedures & Functions", level: 90 },
+                { name: "Packages & Triggers", level: 90 }
+            ]
         },
         {
             category: "🛠️ Desenvolvimento Oracle",
-            skills: ["Oracle APEX", "Oracle Forms", "Oracle Reports"]
+            skills: [
+                { name: "Oracle APEX", level: 75 },
+                { name: "Oracle Forms", level: 85 },
+                { name: "Oracle Reports", level: 85 }
+            ]
         },
         {
             category: "💻 Desenvolvimento Backend",
-            skills: ["Java", "Java Spring Boot", "API REST", "OOP", "Git"]
+            skills: [
+                { name: "Java", level: 80 },
+                { name: "Spring Boot", level: 70 },
+                { name: "API REST", level: 70 },
+                { name: "OOP & Patterns", level: 85 },
+                { name: "Version Control", level: 85 }
+            ]
         },
         {
             category: "💼 Habilidades Profissionais",
-            skills: ["Sustentação de Sistemas", "Otimização de Processos", "Sistemas Corporativos", "Integração de Sistemas", "Documentação", "Sistemas Governamentais", "Sistemas Hospitalares"]
+            skills: [
+                { name: "Sustentação de Sistemas", level: 90 },
+                { name: "Otimização", level: 85 },
+                { name: "Sistemas Corporativos", level: 85 },
+                { name: "Integração", level: 80 },
+                { name: "Documentação", level: 80 },
+                { name: "Domínio Governamental", level: 75 },
+                { name: "Domínio Hospitalar", level: 70 }
+            ]
         }
     ],
-
-    transicao: [
-        {
-            category: "🐍 FASE 1 - Python Fundamentos",
-            skills: ["Python", "OOP", "Data Structures", "Functions", "APIs", "Concurrency"]
-        },
-        {
-            category: "📊 FASE 2 - Pandas + ETL",
-            skills: ["Pandas", "Data Analysis", "Data Cleaning", "ETL", "Data Visualization"]
-        },
-        {
-            category: "⚡ FASE 3 & 4 - PySpark + Delta Lake",
-            skills: ["PySpark", "Spark SQL", "DataFrames", "Delta Lake", "Distributed Processing"]
-        },
-        {
-            category: "🏗️ FASE 5 - Lakehouse Architecture",
-            skills: ["Medallion Architecture", "ACID Transactions", "Schema Evolution", "Data Quality"]
-        },
-        {
-            category: "🔄 FASE 6 - Airflow Orchestration",
-            skills: ["Airflow", "DAGs", "Pipeline Orchestration", "Monitoring", "Scheduling"]
-        },
-        {
-            category: "☁️ FASE 7 - AWS Data Stack",
-            skills: ["AWS S3", "AWS Glue", "AWS Athena", "Cloud Computing", "boto3"]
-        },
-        {
-            category: "📊 FASE 8 - dbt Analytics",
-            skills: ["dbt", "Data Transformation", "Data Documentation", "Data Testing"]
-        },
-        {
-            category: "🔍 FASE 9 - Databricks Platform",
-            skills: ["Databricks", "Unity Catalog", "Spark SQL", "Workflows", "MLOps"]
-        }
-    ]
 };
