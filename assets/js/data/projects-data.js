@@ -1,6 +1,21 @@
 // ===== DADOS DOS PROJETOS - ROADMAP DATA ENGINEER =====
 const PROJECTS_DATA = [
     {
+        id: 0,
+        title: "🏗️ Metodologia de Estudos",
+        description: "Estrutura completa organizada em 9 fases para dominar Data Engineering moderno. Mostra minha abordagem sistemática de aprendizado.",
+        technologies: ["Organização", "Metodologia", "Roadmap", "Planejamento", "Data Engineering"],
+        links: [
+            { 
+                name: "👁️ Ver Estrutura Completa", 
+                url: "https://1drv.ms/f/c/0cc82fec9c1ab050/Eo_W8jMbdThMmQ6M7r7eBewBs6smP6pFyxXkWvkRj7Qfhg?e=pmkQYn" 
+            }
+        ],
+        featured: true,
+        status: "completed",  // Porque a organização já está feita!
+        image: "assets/images/projects/methodology-structure.jpg"
+    },
+    {
         id: 1,
         title: "🐍 FASE 1 - Python Fundamentos",
         description: "Base sólida de programação Python para Data Engineering: funções, OOP, collections, APIs e programação concorrente.",
