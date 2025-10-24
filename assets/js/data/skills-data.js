@@ -45,17 +45,17 @@ const SKILLS_DATA = {
     ],
 
     transicao: [
-    {
-        category: "🐍 Python & Data Engineering",
-        skills: ["Python", "Pandas", "PySpark", "Matplotlib"]
-    },
-    {
-        category: "☁️ Cloud & Data Platforms", 
-        skills: ["AWS", "AWS S3", "AWS Glue", "Delta Lake", "Data Lakehouse", "Medallion Architecture", "Databricks"]
-    },
-    {
-        category: "🛠 Data Engineering Tools",
-        skills: ["Git", "CI/CD", "Airflow", "dbt", "Data Orchestration", "Data Quality", "Docker"]
-    }
-]
+        {
+            category: "🐍 Python & Data Engineering",
+            skills: ["Python", "Pandas", "PySpark", "Matplotlib"]
+        },
+        {
+            category: "☁️ Cloud & Data Platforms", 
+            skills: ["AWS", "AWS S3", "AWS Glue", "Delta Lake", "Data Lakehouse", "Medallion Architecture", "Databricks"]
+        },
+        {
+            category: "🛠 Data Engineering Tools",
+            skills: ["Git", "CI/CD", "Airflow", "dbt", "Data Orchestration", "Data Quality", "Docker"]
+        }
+    ]
 };

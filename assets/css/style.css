@@ -250,18 +250,11 @@ h2 {
 }
 
 /* ===== PROJETOS ===== */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
 .project {
     background: var(--light-color);
     padding: 1.5rem;
     border-radius: var(--border-radius);
-    border-left: 4px solid var(--success-color); /* #27ae60 - VERDE */
+    border-left: 4px solid var(--success-color); /* #58cc71 - VERDE CLARO */
     transition: var(--transition);
     position: relative;
 }
@@ -305,6 +298,33 @@ h2 {
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+/* ===== PROJETOS CATEGORIAS ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.projects-category {
+    margin-bottom: 2.5rem;
+}
+
+.projects-category h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--secondary-color); /* #58cc71 - VERDE CLARO */
+    padding-left: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.projects-category h4 {
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .status-completed {
@@ -743,6 +763,7 @@ footer {
 /* PROJETOS - VERDE CLARO */
 #projetos h2,
 #projetos .section-subtitle,
+#projetos .projects-category h3,
 #projetos .project {
     border-left-color: #58cc71; /* Verde mais suave */
 }
