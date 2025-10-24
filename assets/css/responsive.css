@@ -14,7 +14,8 @@
     .projects-grid,
     .experience-grid,
     .education-grid,
-    .certifications-grid {
+    .certifications-grid,
+    .contact-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
