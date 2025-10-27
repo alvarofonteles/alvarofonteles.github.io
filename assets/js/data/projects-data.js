@@ -23,9 +23,9 @@ const PROJECTS_DATA = {
             description: "Base sólida de programação Python para Data Engineering: funções, OOP, collections, APIs e programação concorrente.",
             technologies: ["Python", "OOP", "Data Structures", "Functions", "APIs", "Concurrency", "Dataclasses"],
             links: [
-                { name: "python-teo", url: "https://github.com/alvarofonteles/python-teo" },
-                { name: "py-functions-duno", url: "https://github.com/alvarofonteles/py-functions-duno" },
-                { name: "py-collections-duno", url: "https://github.com/alvarofonteles/py-collections-duno" }
+                { name: "python_teo", url: "https://github.com/alvarofonteles/python_teo" },
+                { name: "py_functions_duno", url: "https://github.com/alvarofonteles/py_functions_duno" },
+                { name: "py_collections_duno", url: "https://github.com/alvarofonteles/py_collections_duno" }
             ],
             featured: true,
             status: "in-progress",
@@ -37,7 +37,7 @@ const PROJECTS_DATA = {
             description: "Manipulação de dados em memória com Pandas: ETL de datasets médios, análise exploratória e preparação para PySpark.",
             technologies: ["Python", "Pandas", "ETL", "Data Analysis", "Data Cleaning", "Data Visualization"],
             links: [
-                { name: "pandas-teo", url: "https://github.com/alvarofonteles/pandas-teo" }
+                { name: "pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" }
             ],
             featured: true,
             status: "planned",
