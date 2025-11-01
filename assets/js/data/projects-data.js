@@ -25,7 +25,11 @@ const PROJECTS_DATA = {
             links: [
                 { name: "python_teo", url: "https://github.com/alvarofonteles/python_teo" },
                 { name: "py_functions_duno", url: "https://github.com/alvarofonteles/py_functions_duno" },
-                { name: "py_collections_duno", url: "https://github.com/alvarofonteles/py_collections_duno" }
+                { name: "py_collections_duno", url: "https://github.com/alvarofonteles/py_collections_duno" },
+                { name: "python_otavio", url: "https://github.com/alvarofonteles/python_otavio" },
+                { name: "python_andre", url: "https://github.com/alvarofonteles/python_andre" },
+                { name: "py_oop_duno", url: "https://github.com/alvarofonteles/py_oop_duno" },
+                { name: "py_oop_otavio", url: "https://github.com/alvarofonteles/py_oop_otavio" },
             ],
             featured: true,
             status: "in-progress",

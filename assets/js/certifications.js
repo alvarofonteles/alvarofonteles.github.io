@@ -2,12 +2,12 @@
 function loadCertifications() {
     const container = document.getElementById('certifications-container');
     
-    if (!container) {
-        return;
-    }
+    if (!container) return;
     
-    const featuredCerts = CERTIFICATIONS_DATA.filter(cert => cert.featured);
-    
+    const featuredCerts = CERTIFICATIONS_DATA
+        .filter(cert => cert.featured)
+        .sort((a, b) => new Date(b.period) - new Date(a.period));
+        
     container.innerHTML = featuredCerts.map(cert => `
         <div class="certification-item" data-cert-id="${cert.id}">
             <div class="certification-header">

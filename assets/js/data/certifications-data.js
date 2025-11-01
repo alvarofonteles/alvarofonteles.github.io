@@ -64,5 +64,44 @@ const CERTIFICATIONS_DATA = [
             { name: "Microsserviços", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9872fa18-5c07-4088-be97-810b78a4c276.pdf" }
         ],
         featured: true
-    }
+    },    
+    {
+        id: 6,
+        title: "Aprenda Programação PYTHON para Iniciantes",
+        institution: "Udemy",
+        period: "Out 2025",
+        status: "in-progress",
+        description: "Curso Básico Introdutório para Iniciantes em Programação Python com aulas 100% Hands on!",
+        technologies: ["Python", "Programação", "Lógica", "Strings", "Variáveis"],
+        links: [
+            // { name: "Python Iniciantes", url: "#" }
+        ],
+        featured: true
+    },
+    {
+        id: 7,
+        title: "Formação Engenharia de Dados: Domine Big Data! 2025",
+        institution: "Udemy",
+        period: "Nov 2025",
+        status: "planned",
+        description: "Aprenda Engenharia de Dados e Comece sua Preparação para a Profissão da Área de Tecnologia que mais Cresce no mundo!",
+        technologies: ["Python", "Streaming", "ETL", "Data Crawlers", "Spark", "Warehouse", "Data Lake", "SQL", "Cloud"],
+        links: [
+            // { name: "Formação Engenharia de Dados", url: "#" }
+        ],
+        featured: true
+    },
+    {
+        id: 8,
+        title: "Engenharia de Dados com Databricks, Spark e PySpark",
+        institution: "Udemy",
+        period: "Nov 2025",
+        status: "planned",
+        description: "Aprenda as Ferramentas Essenciais para Manipulação e Análise de Grandes Volumes de Dados",
+        technologies: ["Databricks", "PySpark", "Delta Lake", "Data Pipelines", "Medallion", "Lakehouse"],
+        links: [
+            // { name: "Engenharia de Dados", url: "#" }
+        ],
+        featured: true
+    }    
 ];
