@@ -9,7 +9,7 @@ const EDUCATIONS_DATA = [
         description: "Formação em desenvolvimento de software, algoritmos e engenharia de software.",
         technologies: ["Java", "SQL", "Redes", "Engenharia de Software", "Gestão de Projetos"],
         links: [
-            { name: "Diploma", url: "#formacao" }
+            { name: "Diploma", url: "https://1drv.ms/b/c/0cc82fec9c1ab050/EVDQKYPSE1JNp_hchUk76LsBNiWnoaVqgAN75kJPaKdggg" }
         ],
         featured: true
     },

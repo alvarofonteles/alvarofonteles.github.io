@@ -70,11 +70,11 @@ const CERTIFICATIONS_DATA = [
         title: "Aprenda Programação PYTHON para Iniciantes",
         institution: "Udemy",
         period: "Out 2025",
-        status: "in-progress",
+        status: "completed",
         description: "Curso Básico Introdutório para Iniciantes em Programação Python com aulas 100% Hands on!",
         technologies: ["Python", "Programação", "Lógica", "Strings", "Variáveis"],
         links: [
-            // { name: "Python Iniciantes", url: "#" }
+            { name: "Python para Iniciantes", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-29cd6b9e-344f-45e8-a0b9-8669575e4b35.pdf" }
         ],
         featured: true
     },
