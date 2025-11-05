@@ -34,7 +34,7 @@ function loadEducations() {
                 <div class="education-links">
                     ${edu.links.map(link => `
                         <a href="${link.url}" target="_blank" class="education-link">
-                            📄 ${link.name}
+                            📜 ${link.name}
                         </a>
                     `).join('')}
                 </div>

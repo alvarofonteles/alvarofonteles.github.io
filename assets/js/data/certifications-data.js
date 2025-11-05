@@ -80,19 +80,6 @@ const CERTIFICATIONS_DATA = [
     },
     {
         id: 7,
-        title: "Formação Engenharia de Dados: Domine Big Data! 2025",
-        institution: "Udemy",
-        period: "Nov 2025",
-        status: "planned",
-        description: "Aprenda Engenharia de Dados e Comece sua Preparação para a Profissão da Área de Tecnologia que mais Cresce no mundo!",
-        technologies: ["Python", "Streaming", "ETL", "Data Crawlers", "Spark", "Warehouse", "Data Lake", "SQL", "Cloud"],
-        links: [
-            // { name: "Formação Engenharia de Dados", url: "#" }
-        ],
-        featured: true
-    },
-    {
-        id: 8,
         title: "Engenharia de Dados com Databricks, Spark e PySpark",
         institution: "Udemy",
         period: "Nov 2025",
@@ -103,5 +90,18 @@ const CERTIFICATIONS_DATA = [
             // { name: "Engenharia de Dados", url: "#" }
         ],
         featured: true
-    }    
+    },
+    {
+        id: 8,
+        title: "Formação Engenharia de Dados: Domine Big Data! 2025",
+        institution: "Udemy",
+        period: "Dez 2025",
+        status: "planned",
+        description: "Aprenda Engenharia de Dados e Comece sua Preparação para a Profissão da Área de Tecnologia que mais Cresce no mundo!",
+        technologies: ["Python", "Streaming", "ETL", "Data Crawlers", "Spark", "Warehouse", "Data Lake", "SQL", "Cloud"],
+        links: [
+            // { name: "Formação Engenharia de Dados", url: "#" }
+        ],
+        featured: true
+    }  
 ];

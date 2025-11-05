@@ -9,7 +9,7 @@ const PROJECTS_DATA = {
             technologies: ["Organização", "Metodologia", "Roadmap", "Planejamento", "Data Engineering"],
             links: [
                 { 
-                    name: "👁️ Ver Estrutura Completa", 
+                    name: "📁 Estrutura do Projeto", 
                     url: "https://1drv.ms/f/c/0cc82fec9c1ab050/Ej_zAkJcDsxPpKpQkODTdqYBUnji_yfcbF2PlTOsoQmfOA" 
                 }
             ],
@@ -23,12 +23,12 @@ const PROJECTS_DATA = {
             description: "Base sólida de programação Python para Data Engineering: funções, OOP, collections, APIs e programação concorrente.",
             technologies: ["Python", "OOP", "Data Structures", "Functions", "APIs", "Concurrency", "Dataclasses"],
             links: [
-                { name: "python_teo", url: "https://github.com/alvarofonteles/python_teo" },
-                { name: "py_functions_duno", url: "https://github.com/alvarofonteles/py_functions_duno" },
-                { name: "py_collections_duno", url: "https://github.com/alvarofonteles/py_collections_duno" },
-                { name: "python_otavio", url: "https://github.com/alvarofonteles/python_otavio" },
-                { name: "py_oop_duno", url: "https://github.com/alvarofonteles/py_oop_duno" },
-                { name: "py_oop_otavio", url: "https://github.com/alvarofonteles/py_oop_otavio" },
+                { name: "🔗 python_teo", url: "https://github.com/alvarofonteles/python_teo" },
+                { name: "🔗 py_functions_duno", url: "https://github.com/alvarofonteles/py_functions_duno" },
+                { name: "🔗 py_collections_duno", url: "https://github.com/alvarofonteles/py_collections_duno" },
+                { name: "🔗 python_otavio", url: "https://github.com/alvarofonteles/python_otavio" },
+                { name: "🔗 py_oop_otavio", url: "https://github.com/alvarofonteles/py_oop_otavio" },
+                { name: "🔗 py_oop_duno", url: "https://github.com/alvarofonteles/py_oop_duno" },
             ],
             featured: true,
             status: "in-progress",
@@ -40,7 +40,7 @@ const PROJECTS_DATA = {
             description: "Manipulação de dados em memória com Pandas: ETL de datasets médios, análise exploratória e preparação para PySpark.",
             technologies: ["Python", "Pandas", "ETL", "Data Analysis", "Data Cleaning", "Data Visualization"],
             links: [
-                { name: "pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" }
+                // { name: "🔗 pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" }
             ],
             featured: true,
             status: "planned",

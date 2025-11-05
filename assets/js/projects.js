@@ -30,7 +30,7 @@ function loadProjects() {
                 <div class="project-links">
                     ${project.links.map(link => `
                         <a href="${link.url}" target="_blank" class="project-link">
-                            🔗 ${link.name}
+                            ${link.name}
                         </a>
                     `).join('')}
                 </div>
