@@ -8,14 +8,14 @@ const PROJECTS_DATA = {
             description: "Estrutura completa organizada em 9 fases para dominar Data Engineering moderno. Mostra minha abordagem sistemática de aprendizado.",
             technologies: ["Organização", "Metodologia", "Roadmap", "Planejamento", "Data Engineering"],
             links: [
-                { 
-                    name: "📁 Estrutura do Projeto", 
-                    url: "https://1drv.ms/f/c/0cc82fec9c1ab050/Ej_zAkJcDsxPpKpQkODTdqYBUnji_yfcbF2PlTOsoQmfOA" 
+                {
+                    name: "📁 Estrutura do Projeto",
+                    url: "https://1drv.ms/f/c/0cc82fec9c1ab050/Ej_zAkJcDsxPpKpQkODTdqYBUnji_yfcbF2PlTOsoQmfOA"
                 }
             ],
             featured: true,
             status: "completed",  // Porque a organização já está feita!
-            image: "assets/images/projects/methodology-structure.jpg"
+            image: "assets/images/projects/badges/methodology-badge.svg",
         },
         {
             id: 1,
@@ -32,7 +32,7 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "in-progress",
-            image: "assets/images/projects/python-fundamentals.jpg"
+            image: "assets/images/projects/badges/python-badge.svg",
         },
         {
             id: 2,
@@ -44,7 +44,7 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/pandas-analysis.jpg"
+            image: "assets/images/projects/badges/pandas-badge.svg",
         },
         {
             id: 3,
@@ -54,7 +54,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/pyspark-intro.jpg"
+            image: "assets/images/projects/badges/pyspark-badge.svg",
         },
         {
             id: 4,
@@ -64,7 +64,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/pyspark-pipeline.jpg"
+            image: "assets/images/projects/badges/pyspark-advanced-badge.svg",
         },
         {
             id: 5,
@@ -74,7 +74,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/data-lakehouse.jpg"
+            image: "assets/images/projects/badges/lakehouse-badge.svg",
         },
         {
             id: 6,
@@ -84,7 +84,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/airflow-dags.jpg"
+            image: "assets/images/projects/badges/airflow-badge.svg",
         },
         {
             id: 7,
@@ -94,7 +94,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/aws-data-stack.jpg"
+            image: "assets/images/projects/badges/aws-badge.svg",
         },
         {
             id: 8,
@@ -104,7 +104,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/dbt-transformations.jpg"
+            image: "assets/images/projects/badges/dbt-badge.svg",
         },
         {
             id: 9,
@@ -114,33 +114,49 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/databricks-spark.jpg"
+            image: "assets/images/projects/badges/databricks-badge.svg",
         },
     ],
-    
+
     // Projetos Data Engineering
-    portfolio: [    
+    portfolio: [
         {
             id: 1,
-            title: "🔄 Pipeline ETL - Arquitetura Tradicional",
-            description: "Pipeline ETL clássico: extração, transformação e depois carga. Demonstra fundamentos sólidos de engenharia de dados.",
-            technologies: ["PySpark", "Airflow", "Python", "Pandas", "SQL"],
-            links: [],
+            title: "📊 Analisador de Dados Python",
+            subtitle: "FASE 1-2: 🐍 Python + Pandas",  // Novo campo
+            description: "Conjunto de ferramentas para análise e processamento de dados usando Python puro e Pandas.",
+            technologies: ["Python", "OOP", "Pandas", "ETL", "Data Analysis", "Data Visualization"],
+            links: [
+                { name: "🔗 analisador-dados-python", url: "https://github.com/alvarofonteles/analisador-dados-python" },
+            ],
             featured: true,
-            status: "planned",
-            image: "assets/images/projects/pipeline-etl.jpg",
-            architecture: "ETL" // 🆕 Mostra o padrão arquitetural
+            status: "in-progress",
+            image: "assets/images/projects/badges/python-badge.svg",
+            architecture: "ETL" // Domínio dos fundamentos
         },
         {
             id: 2,
-            title: "⚡ Pipeline ELT - Arquitetura Moderna",
-            description: "Pipeline ELT moderno com Delta Lake: extração, carga direta no data lake e transformação sob demanda. Arquitetura cloud-native.",
-            technologies: ["Delta Lake", "PySpark", "dbt", "AWS S3", "Databricks"],
+            title: "🔄 Pipeline ETL - Arquitetura Tradicional",
+            subtitle: "FASE 3-4: ⚡ PySpark + Delta",
+            description: "Pipeline ETL clássico: extração, transformação e depois carga. Demonstra fundamentos sólidos de engenharia de dados.",
+            technologies: ["PySpark", "Delta Lake", "Airflow", "Python", "SQL"],
             links: [],
             featured: true,
-            status: "planned", 
-            image: "assets/images/projects/pipeline-elt.jpg",
-            architecture: "ELT" // 🆕 Mostra o padrão moderno
+            status: "planned",
+            image: "assets/images/projects/badges/pyspark-badge.svg",
+            architecture: "ETL" // Habilidades Spark tradicionais
+        },
+        {
+            id: 3,
+            title: "⚡ Pipeline ELT - Arquitetura Moderna",
+            subtitle: "FASE 5+: 🏗️ Arquitetura Moderna",
+            description: "Pipeline ELT moderno com Delta Lake: extração, carga direta no data lake e transformação sob demanda. Arquitetura cloud-native.",
+            technologies: ["PySpark", "Delta Lake", "dbt", "AWS S3", "Databricks", "Airflow"],
+            links: [],
+            featured: true,
+            status: "planned",
+            image: "assets/images/projects/badges/delta-lake-badge.svg",
+            architecture: "ELT" // Arquitetura cloud-native
         }
     ],
 };

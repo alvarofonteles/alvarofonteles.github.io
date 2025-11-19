@@ -11,7 +11,7 @@ function loadProjects() {
     container.innerHTML = featuredProjects.map(project => `
         <div class="project" data-project-id="${project.id}">
     
-            <!-- ${project.image ? `<img src="${project.image}" alt="${project.title}" class="project-image">` : ''} -->
+            ${project.image ? `<img src="${project.image}" alt="${project.title}" class="project-image">` : ''}
 
             <h4>${project.title}</h4>
             <p>${project.description}</p>
@@ -38,7 +38,7 @@ function loadProjects() {
         </div>
     `).join('');
 
-    // Projetos Reais Profissional
+    // Projetos Data Engineering
     const containerPortfolio = document.getElementById('projects-container-portfolio');
     
     if (!containerPortfolio) {
@@ -49,9 +49,11 @@ function loadProjects() {
     containerPortfolio.innerHTML = featuredPortfolioProjects.map(project => `
         <div class="project" data-project-id="${project.id}">
     
-            <!-- ${project.image ? `<img src="${project.image}" alt="${project.title}" class="project-image">` : ''} -->
+            ${project.image ? `<img src="${project.image}" alt="${project.title}" class="project-image">` : ''}
 
             <h4>${project.title}</h4>
+            <p class="project-subtitle">${project.subtitle}</p>    
+
             <p>${project.description}</p>
             
             <div class="tech-tags">
@@ -68,7 +70,7 @@ function loadProjects() {
                 <div class="project-links">
                     ${project.links.map(link => `
                         <a href="${link.url}" target="_blank" class="project-link">
-                            🔗 ${link.name}
+                            ${link.name}
                         </a>
                     `).join('')}
                 </div>
