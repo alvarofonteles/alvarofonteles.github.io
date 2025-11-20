@@ -1,6 +1,5 @@
 # Álvaro 👨‍💻🎲🇧🇷 - Modelo de Portfolio
 
-[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?logo=github)](https://alvarofonteles.github.io/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -9,7 +8,7 @@
 
 Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5, CSS3 e JavaScript vanilla**. Perfeito para desenvolvedores que desejam apresentar sua jornada profissional de forma elegante e técnica.
 
-**Live Demo**: [alvarofonteles.github.io](https://alvarofonteles.github.io)
+[![Portfolio](https://img.shields.io/badge/GitHub%20Page-Portfolio-blue?logo=github)](https://alvarofonteles.github.io/)
 
 ## ✨ Características
 
@@ -67,14 +66,28 @@ portfolio-template/
 │   │   ├── projects.js         # Gerenciamento de projetos
 │   │   ├── educations.js       # Gerenciamento de formação acadêmica
 │   │   └── 📁 data/            # Dados estruturados
-│   │       ├── skills-data.js
-│   │       ├── certifications-data.js
-│   │       ├── experiences-data.js
-│   │       ├── projects-data.js
-│   │       └── educations-data.js
+│   │       ├── skills-data.js          # Dados das habilidades
+│   │       ├── certifications-data.js  # Dados das certificações  
+│   │       ├── experiences-data.js     # Dados da experiência
+│   │       ├── projects-data.js        # Dados dos projetos
+│   │       └── educations-data.js      # Dados da formação
 │   └── 📁 images/
-│       ├── profile.jpg        # Profile picture
-│       └── 📁 projects/       # Project screenshots
+│       ├── profile.jpg         # Profile picture
+│       └── 📁 projects/        # Project screenshots
+│           └── 📁 badges/      # Badges dos projetos
+│               ├── airflow-badge.svg
+│               ├── aws-badge.svg
+│               ├── databricks-badge.svg
+│               ├── dbt-badge.svg
+│               ├── delta-lake-badge.svg
+│               ├── github-sponsors-badge.svg
+│               ├── lakehouse-badge.svg
+│               ├── methodology-badge.svg
+│               ├── pandas-badge.svg
+│               ├── portfolio-badge.svg
+│               ├── pyspark-advanced-badge.svg
+│               ├── pyspark-badge.svg
+│               └── python-badge.svg
 │
 ├── 📄 README.md               # Project documentation
 ├── 📄 LICENSE                 # MIT License
@@ -93,11 +106,22 @@ cd alvarofonteles.github.io
 - Edite `index.html` com suas informações pessoais
 - Atualize os arquivos em `assets/js/data/` com seus dados:
   - `projects-data.js` - Seus projetos
-  - `experience-data.js` - Sua experiência profissional
-  - `education-data.js` - Sua formação acadêmica
+  - `experiences-data.js` - Sua experiência profissional  
+  - `educations-data.js` - Sua formação acadêmica
   - `skills-data.js` - Suas habilidades técnicas
   - `certifications-data.js` - Suas certificações
-- Substitua imagens em `assets/images/`
+- Atualize os módulos em `assets/js/` para refletir seus dados:
+  - `projects.js` - Lógica dos projetos
+  - `experiences.js` - Lógica da experiência
+  - `educations.js` - Lógica da formação
+  - `skills.js` - Lógica das habilidades
+  - `certifications.js` - Lógica das certificações
+- Substitua imagens em `assets/images/`:
+  - `profile.jpg` - Sua foto de perfil
+  - `projects/badges/` - Badges dos seus projetos
+- Ajuste cores e temas no `assets/css/style.css`
+- Atualize metatags e SEO no `<head>` do `index.html`
+- Configure suas redes sociais nos links de contato
 
 ### **3. 🌐 Deploy (GitHub Pages)**
 ```bash
@@ -145,13 +169,14 @@ O projeto utiliza uma arquitetura modular onde:
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está sob a licença MIT.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## 🤝 Contribuições
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.  
 
-
-**Desenvolvido por [Álvaro 👨‍💻🎲🇧🇷](https://github.com/alvarofonteles)**
+[![GitHub](https://img.shields.io/badge/GitHub-%40alvarofonteles-blue?logo=github)](https://github.com/alvarofonteles/) [![Sponsor](https://img.shields.io/badge/Sponsor-%40alvarofonteles-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/alvarofonteles) 
 
 *"Um template moderno para desenvolvedores modernos"* 🚀

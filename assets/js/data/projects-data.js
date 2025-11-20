@@ -124,29 +124,6 @@ const PROJECTS_DATA = {
     // Projetos Data Engineering
     portfolio: [
         {
-            id: "portfolio-template",
-            title: "🚀 Portfolio Template - GitHub Pages",
-            subtitle: "Template Moderno para Desenvolvedores",
-            description: "Modelo de portfolio profissional moderno e responsivo, desenvolvido com HTML5, CSS3 e JavaScript vanilla.",
-            technologies: ["HTML5", "CSS3", "JavaScript", "Vanilla JS", "SEO", "GitHub Pages", "Responsive Design", "CSS Grid", "Flexbox"],
-            links: [
-                { name: "⭐ Repositório", url: "https://github.com/alvarofonteles/alvarofonteles.github.io" },
-                { name: "🌐 Live Demo", url: "https://alvarofonteles.github.io" },
-                { name: "📖 README", url: "https://github.com/alvarofonteles/alvarofonteles.github.io#readme" }
-            ],
-            featured: true,
-            status: "completed",
-            image: "assets/images/projects/badges/portfolio-badge.svg",
-            architecture: "Static Site",
-            highlights: [
-                "100% Vanilla JavaScript - Zero dependências",
-                "Deploy automático com GitHub Pages", 
-                "Design system com CSS Variables",
-                "Estrutura modular e escalável",
-                "Performance otimizada e SEO ready"
-            ]
-        },
-        {
             id: 1,
             title: "📊 Analisador de Dados Python",
             subtitle: "FASE 1-2: 🐍 Python + Pandas",  // Novo campo
@@ -187,6 +164,28 @@ const PROJECTS_DATA = {
             status: "planned",
             image: "assets/images/projects/badges/delta-lake-badge.svg",
             architecture: "ELT" // Arquitetura cloud-native
+        },
+        {
+            id: "portfolio-template",
+            title: "🚀 Portfolio Template - GitHub Pages",
+            subtitle: "Template Moderno para Desenvolvedores",
+            description: "Modelo de portfolio profissional moderno e responsivo, desenvolvido com HTML5, CSS3 e JavaScript vanilla.",
+            technologies: ["HTML5", "CSS3", "JavaScript", "Vanilla JS", "SEO", "GitHub Pages", "Responsive Design", "CSS Grid", "Flexbox"],
+            links: [
+                { name: "⭐ Repositório", url: "https://github.com/alvarofonteles/alvarofonteles.github.io" },
+                { name: "📖 README", url: "https://github.com/alvarofonteles/alvarofonteles.github.io#readme" }
+            ],
+            featured: true,
+            status: "completed",
+            image: "assets/images/projects/badges/portfolio-badge.svg",
+            architecture: "Static Site",
+            highlights: [
+                "100% Vanilla JavaScript - Zero dependências",
+                "Deploy automático com GitHub Pages", 
+                "Design system com CSS Variables",
+                "Estrutura modular e escalável",
+                "Performance otimizada e SEO ready"
+            ]
         }
     ],
 };

@@ -403,7 +403,7 @@ h2 {
 .education-link:hover,
 .certification-link:hover,
 .contact-link:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02);
     box-shadow: var(--box-shadow);
 }
 
@@ -662,29 +662,54 @@ h2 {
     font-weight: 600;
 }
 
-/* ===== CONTATO ===== */
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
+/* ===== CONTACT BADGES ===== */
+.contact-badge-link {
+    display: block;
+    text-decoration: none;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.contact-badge {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    transition: var(--transition);
+}
+
+.contact-badge-link:hover .contact-badge {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-text {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    text-align: left;
-    padding: 1rem;
+    justify-content: center; /* Centraliza o badge */
+    padding: 1.5rem; /* Aumenta o padding */
     background: var(--light-color);
     border-radius: var(--border-radius);
+    border-left: 4px solid #FFD700;
     transition: var(--transition);
-    border-left: 4px solid #FFD700; /* AMARELO OURO */
 }
 
 .contact-item:hover {
-    transform: translateY(-3px);
     box-shadow: var(--box-shadow);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 .contact-icon {
@@ -699,17 +724,60 @@ h2 {
     font-size: 1.2rem;
 }
 
-.contact-info {
-    flex: 1;
-    display: flex;
-    align-items: center;
+/* ===== SEÇÃO SPONSORS ===== */
+.sponsors-section {
+    background: var(--light-color);
+    text-align: center;
+    border-left: 4px solid #ea4aaa; /* ROSA do GitHub Sponsors */
+    transition: var(--transition);
+    padding: 2.5rem;
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 
-.contact-info h3 {
+.sponsors-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.sponsors-content h3 {
     color: var(--dark-color);
-    margin-bottom: 0.3rem;
-    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
+}
+
+.sponsors-content p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.sponsors-content strong {
+    color: var(--dark-color);
+}
+
+.sponsors-content a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.sponsors-content a:hover {
+    transform: scale(1.05);
+}
+
+.sponsors-content img {
+    border-radius: 6px;
+    display: block;
+}
+
+.sponsors-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
 }
 
 /* ===== FOOTER ===== */
