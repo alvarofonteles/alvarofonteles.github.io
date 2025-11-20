@@ -47,15 +47,23 @@ const SKILLS_DATA = {
     transicao: [
         {
             category: "🐍 Python & Data Engineering",
-            skills: ["Python", "Pandas", "PySpark", "Matplotlib"]
+            skills: [
+                "Python", "OOP", "Pandas", "Data Structures", "APIs & REST", "Concurrency", "Dataclasses", "Threading", "Data Analysis", 
+                "Data Cleaning", "Data Visualization", "CSV/Excel/JSON", "DataFrames", "ETL Fundamentals"
+            ]
         },
         {
             category: "☁️ Cloud & Data Platforms", 
-            skills: ["AWS", "AWS S3", "AWS Glue", "Delta Lake", "Data Lakehouse", "Medallion Architecture", "Databricks"]
+            skills: [
+                "AWS", "AWS S3", "AWS Glue", "Delta Lake", "Data Lakehouse", "Medallion Architecture", "Databricks", 
+                "PySpark Fundamentals", "Distributed Computing"
+            ]
         },
         {
-            category: "🛠 Data Engineering Tools",
-            skills: ["Git", "CI/CD", "Airflow", "dbt", "Data Orchestration", "Data Quality", "Docker"]
+            category: "🛠️ Data Engineering Tools",
+            skills: [
+                "Git", "CI/CD", "Airflow", "dbt", "Data Orchestration", "Data Quality", "Docker", "SQL", "Data Pipelines", 
+            ]
         }
     ]
 };

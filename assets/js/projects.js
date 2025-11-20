@@ -11,7 +11,7 @@ function loadProjects() {
     container.innerHTML = featuredProjects.map(project => `
         <div class="project" data-project-id="${project.id}">
     
-            ${project.image ? `<img src="${project.image}" alt="${project.title}" class="project-image">` : ''}
+            ${project.image ? `<img src="${project.image}" alt="" class="project-image">` : ''}
 
             <h4>${project.title}</h4>
             <p>${project.description}</p>
@@ -49,7 +49,7 @@ function loadProjects() {
     containerPortfolio.innerHTML = featuredPortfolioProjects.map(project => `
         <div class="project" data-project-id="${project.id}">
     
-            ${project.image ? `<img src="${project.image}" alt="${project.title}" class="project-image">` : ''}
+            ${project.image ? `<img src="${project.image}" alt="" class="project-image">` : ''}
 
             <h4>${project.title}</h4>
             <p class="project-subtitle">${project.subtitle}</p>    

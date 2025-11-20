@@ -21,14 +21,16 @@ const PROJECTS_DATA = {
             id: 1,
             title: "🐍 FASE 1 - Python Fundamentos",
             description: "Base sólida de programação Python para Data Engineering: funções, OOP, collections, APIs e programação concorrente.",
-            technologies: ["Python", "OOP", "Data Structures", "Functions", "APIs", "Concurrency", "Dataclasses"],
+            technologies: ["Python", "OOP", "Data Structures", "Functions", "APIs", "Concurrency", "Dataclasses", "Threading", "Requests", "JSON"],
             links: [
-                { name: "🔗 python_teo", url: "https://github.com/alvarofonteles/python_teo" },
+                { name: "⭐ python_teo", url: "https://github.com/alvarofonteles/python_teo" },
                 { name: "🔗 py_functions_duno", url: "https://github.com/alvarofonteles/py_functions_duno" },
                 { name: "🔗 py_collections_duno", url: "https://github.com/alvarofonteles/py_collections_duno" },
                 { name: "🔗 python_otavio", url: "https://github.com/alvarofonteles/python_otavio" },
-                { name: "🔗 py_oop_otavio", url: "https://github.com/alvarofonteles/py_oop_otavio" },
+                { name: "⭐ py_oop_otavio", url: "https://github.com/alvarofonteles/py_oop_otavio" },
                 { name: "🔗 py_oop_duno", url: "https://github.com/alvarofonteles/py_oop_duno" },
+                { name: "🔗 py_api_duno", url: "https://github.com/alvarofonteles/py_api_duno" },
+                // { name: "🔗 py_threads_duno", url: "https://github.com/alvarofonteles/py_threads_duno" },
             ],
             featured: true,
             status: "in-progress",
@@ -38,9 +40,10 @@ const PROJECTS_DATA = {
             id: 2,
             title: "📊 FASE 2 - Pandas + ETL",
             description: "Manipulação de dados em memória com Pandas: ETL de datasets médios, análise exploratória e preparação para PySpark.",
-            technologies: ["Python", "Pandas", "ETL", "Data Analysis", "Data Cleaning", "Data Visualization"],
+            technologies: ["Python", "Pandas", "ETL", "Data Analysis", "Data Cleaning", "Data Visualization", "CSV", "Excel", "JSON", "DataFrames"],
             links: [
-                // { name: "🔗 pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" }
+                // { name: "🔗 pandas_samuka", url: "https://github.com/alvarofonteles/pandas_samuka" },
+                // { name: "🔗 pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" },
             ],
             featured: true,
             status: "planned",
@@ -121,13 +124,36 @@ const PROJECTS_DATA = {
     // Projetos Data Engineering
     portfolio: [
         {
+            id: "portfolio-template",
+            title: "🚀 Portfolio Template - GitHub Pages",
+            subtitle: "Template Moderno para Desenvolvedores",
+            description: "Modelo de portfolio profissional moderno e responsivo, desenvolvido com HTML5, CSS3 e JavaScript vanilla.",
+            technologies: ["HTML5", "CSS3", "JavaScript", "Vanilla JS", "SEO", "GitHub Pages", "Responsive Design", "CSS Grid", "Flexbox"],
+            links: [
+                { name: "⭐ Repositório", url: "https://github.com/alvarofonteles/alvarofonteles.github.io" },
+                { name: "🌐 Live Demo", url: "https://alvarofonteles.github.io" },
+                { name: "📖 README", url: "https://github.com/alvarofonteles/alvarofonteles.github.io#readme" }
+            ],
+            featured: true,
+            status: "completed",
+            image: "assets/images/projects/badges/portfolio-badge.svg",
+            architecture: "Static Site",
+            highlights: [
+                "100% Vanilla JavaScript - Zero dependências",
+                "Deploy automático com GitHub Pages", 
+                "Design system com CSS Variables",
+                "Estrutura modular e escalável",
+                "Performance otimizada e SEO ready"
+            ]
+        },
+        {
             id: 1,
             title: "📊 Analisador de Dados Python",
             subtitle: "FASE 1-2: 🐍 Python + Pandas",  // Novo campo
             description: "Conjunto de ferramentas para análise e processamento de dados usando Python puro e Pandas.",
             technologies: ["Python", "OOP", "Pandas", "ETL", "Data Analysis", "Data Visualization"],
             links: [
-                { name: "🔗 analisador-dados-python", url: "https://github.com/alvarofonteles/analisador-dados-python" },
+                { name: "⭐ analisador-dados-python", url: "https://github.com/alvarofonteles/analisador-dados-python" },
             ],
             featured: true,
             status: "in-progress",
@@ -140,7 +166,9 @@ const PROJECTS_DATA = {
             subtitle: "FASE 3-4: ⚡ PySpark + Delta",
             description: "Pipeline ETL clássico: extração, transformação e depois carga. Demonstra fundamentos sólidos de engenharia de dados.",
             technologies: ["PySpark", "Delta Lake", "Airflow", "Python", "SQL"],
-            links: [],
+            links: [
+                // { name: "🔗 pipeline-etl-tradicional", url: "https://github.com/alvarofonteles/pipeline-etl-tradicional" },
+            ],
             featured: true,
             status: "planned",
             image: "assets/images/projects/badges/pyspark-badge.svg",
@@ -152,7 +180,9 @@ const PROJECTS_DATA = {
             subtitle: "FASE 5+: 🏗️ Arquitetura Moderna",
             description: "Pipeline ELT moderno com Delta Lake: extração, carga direta no data lake e transformação sob demanda. Arquitetura cloud-native.",
             technologies: ["PySpark", "Delta Lake", "dbt", "AWS S3", "Databricks", "Airflow"],
-            links: [],
+            links: [
+                // { name: "🔗 pipeline-elt-moderno", url: "https://github.com/alvarofonteles/pipeline-elt-moderno" },
+            ],
             featured: true,
             status: "planned",
             image: "assets/images/projects/badges/delta-lake-badge.svg",
