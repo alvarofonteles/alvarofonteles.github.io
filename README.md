@@ -1,4 +1,5 @@
-# Álvaro 👨‍💻🎲🇧🇷 - Modelo de Portfolio
+# Álvaro 👨‍💻🎲🇧🇷
+## Modelo de Portfolio
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -8,7 +9,7 @@
 
 Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5, CSS3 e JavaScript vanilla**. Perfeito para desenvolvedores que desejam apresentar sua jornada profissional de forma elegante e técnica.
 
-[![Portfolio](https://img.shields.io/badge/GitHub%20Page-Portfolio-blue?logo=github)](https://alvarofonteles.github.io/)
+  [![Portfolio](https://img.shields.io/badge/GitHub%20Page-alvarofonteles.github.io-blue?logo=github)](https://alvarofonteles.github.io/)  
 
 ## ✨ Características
 
@@ -53,7 +54,9 @@ Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5,
 ```
 portfolio-template/
 │
-├── 📄 index.html               # Página principal
+├── 📄 index.html              # Página principal
+├── 📁 .github/                # GitHub configurations
+│   └── 📄 FUNDING.yml         # Sponsorship configuration
 ├── 📁 assets/
 │   ├── 📁 css/
 │   │   ├── style.css           # Estilos principais + variáveis CSS
@@ -74,14 +77,18 @@ portfolio-template/
 │   └── 📁 images/
 │       ├── profile.jpg         # Profile picture
 │       └── 📁 projects/        # Project screenshots
-│           └── 📁 badges/      # Badges dos projetos
+│           └── 📁 badges/      # Badges dos projetos e contatos
 │               ├── airflow-badge.svg
 │               ├── aws-badge.svg
+│               ├── cv-badge.svg
 │               ├── databricks-badge.svg
 │               ├── dbt-badge.svg
 │               ├── delta-lake-badge.svg
+│               ├── email-badge.svg
+│               ├── github-badge.svg
 │               ├── github-sponsors-badge.svg
 │               ├── lakehouse-badge.svg
+│               ├── linkedin-badge.svg
 │               ├── methodology-badge.svg
 │               ├── pandas-badge.svg
 │               ├── portfolio-badge.svg
@@ -91,6 +98,7 @@ portfolio-template/
 │
 ├── 📄 README.md               # Project documentation
 ├── 📄 LICENSE                 # MIT License
+├── 📄 SECURITY.md             # Security policy
 └── 📄 .gitignore              # Git ignore rules
 ```
 
@@ -144,28 +152,6 @@ npx serve ./
 
 # Acesse: http://localhost:8000
 ```
-
-## 🎯 Personalização
-
-### **📝 Conteúdo Editável**
-- **Dados Pessoais**: Nome, título, bio, contato
-- **Projetos**: Título, descrição, tecnologias, links, status
-- **Experiência**: Empresas, cargos, períodos, conquistas, tecnologias
-- **Formação**: Cursos, instituições, períodos, status
-- **Habilidades**: Categorias, tecnologias (atual e em transição)
-- **Certificações**: Cursos, instituições, links, tecnologias
-
-### **🎨 Customização Visual**
-- **Cores**: Edite variáveis CSS em `assets/css/style.css`
-- **Fontes**: Modifique `@import` do Google Fonts
-- **Layout**: Ajuste grids e containers no CSS
-
-## 🔧 Estrutura de Dados
-
-O projeto utiliza uma arquitetura modular onde:
-- **Dados** são separados em arquivos `.js` na pasta `data/`
-- **Lógica** é implementada em arquivos `.js` na pasta `js/`
-- **Cada seção** é independente e auto-contida
 
 ## 📄 Licença
 
