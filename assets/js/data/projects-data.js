@@ -15,7 +15,7 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "completed",  // Porque a organização já está feita!
-            image: "assets/images/projects/badges/methodology-badge.svg",
+            images: [ "assets/images/projects/badges/methodology-badge.svg" ],
         },
         {
             id: 1,
@@ -23,18 +23,17 @@ const PROJECTS_DATA = {
             description: "Base sólida de programação Python para Data Engineering: funções, OOP, collections, APIs e programação concorrente.",
             technologies: ["Python", "OOP", "Data Structures", "Functions", "APIs", "Concurrency", "Dataclasses", "Threading", "Requests", "JSON"],
             links: [
-                { name: "⭐ python_teo", url: "https://github.com/alvarofonteles/python_teo" },
+                { name: "🔗 python_teo", url: "https://github.com/alvarofonteles/python_teo" },
                 { name: "🔗 py_functions_duno", url: "https://github.com/alvarofonteles/py_functions_duno" },
                 { name: "🔗 py_collections_duno", url: "https://github.com/alvarofonteles/py_collections_duno" },
                 { name: "🔗 python_otavio", url: "https://github.com/alvarofonteles/python_otavio" },
                 { name: "⭐ py_oop_otavio", url: "https://github.com/alvarofonteles/py_oop_otavio" },
                 { name: "🔗 py_oop_duno", url: "https://github.com/alvarofonteles/py_oop_duno" },
-                { name: "🔗 py_api_duno", url: "https://github.com/alvarofonteles/py_api_duno" },
-                // { name: "🔗 py_threads_duno", url: "https://github.com/alvarofonteles/py_threads_duno" },
+                { name: "🔗 py_restapi_hashtag", url: "https://github.com/alvarofonteles/py_restapi_hashtag" },
             ],
             featured: true,
-            status: "in-progress",
-            image: "assets/images/projects/badges/python-badge.svg",
+            status: "completed",
+            images: [ "assets/images/projects/badges/python-badge.svg" ],
         },
         {
             id: 2,
@@ -42,12 +41,12 @@ const PROJECTS_DATA = {
             description: "Manipulação de dados em memória com Pandas: ETL de datasets médios, análise exploratória e preparação para PySpark.",
             technologies: ["Python", "Pandas", "ETL", "Data Analysis", "Data Cleaning", "Data Visualization", "CSV", "Excel", "JSON", "DataFrames"],
             links: [
-                // { name: "🔗 pandas_samuka", url: "https://github.com/alvarofonteles/pandas_samuka" },
+                { name: "🔗 pandas_samuka", url: "https://github.com/alvarofonteles/pandas_samuka" },
                 // { name: "🔗 pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" },
             ],
             featured: true,
-            status: "planned",
-            image: "assets/images/projects/badges/pandas-badge.svg",
+            status: "in-progress",
+            images: [ "assets/images/projects/badges/pandas-badge.svg" ],
         },
         {
             id: 3,
@@ -57,7 +56,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/pyspark-badge.svg",
+            images: [ "assets/images/projects/badges/pyspark-badge.svg" ],
         },
         {
             id: 4,
@@ -67,7 +66,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/pyspark-advanced-badge.svg",
+            images: [ "assets/images/projects/badges/pyspark-advanced-badge.svg" ],
         },
         {
             id: 5,
@@ -77,7 +76,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/lakehouse-badge.svg",
+            images: [ "assets/images/projects/badges/lakehouse-badge.svg" ],
         },
         {
             id: 6,
@@ -87,7 +86,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/airflow-badge.svg",
+            images: [ "assets/images/projects/badges/airflow-badge.svg" ],
         },
         {
             id: 7,
@@ -97,7 +96,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/aws-badge.svg",
+            images: [ "assets/images/projects/badges/aws-badge.svg" ],
         },
         {
             id: 8,
@@ -107,7 +106,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/dbt-badge.svg",
+            images: [ "assets/images/projects/badges/dbt-badge.svg" ],
         },
         {
             id: 9,
@@ -117,7 +116,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/databricks-badge.svg",
+            images: [ "assets/images/projects/badges/databricks-badge.svg" ],
         },
     ],
 
@@ -134,7 +133,10 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "in-progress",
-            image: "assets/images/projects/badges/python-badge.svg",
+            images: [ 
+                "assets/images/projects/badges/python-badge.svg",
+                "assets/images/projects/badges/pandas-badge.svg"
+             ],
             architecture: "ETL" // Domínio dos fundamentos
         },
         {
@@ -148,7 +150,10 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/pyspark-badge.svg",
+            images: [ 
+                "assets/images/projects/badges/pyspark-badge.svg",
+                "assets/images/projects/badges/delta-lake-badge.svg" 
+            ],
             architecture: "ETL" // Habilidades Spark tradicionais
         },
         {
@@ -162,7 +167,11 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "planned",
-            image: "assets/images/projects/badges/delta-lake-badge.svg",
+            images: [ 
+                "assets/images/projects/badges/pyspark-advanced-badge.svg",
+                "assets/images/projects/badges/delta-lake-badge.svg",
+                "assets/images/projects/badges/databricks-badge.svg"
+            ],
             architecture: "ELT" // Arquitetura cloud-native
         },
         {
@@ -173,19 +182,16 @@ const PROJECTS_DATA = {
             technologies: ["HTML5", "CSS3", "JavaScript", "Vanilla JS", "SEO", "GitHub Pages", "Responsive Design", "CSS Grid", "Flexbox"],
             links: [
                 { name: "⭐ Repositório", url: "https://github.com/alvarofonteles/alvarofonteles.github.io" },
-                { name: "📖 README", url: "https://github.com/alvarofonteles/alvarofonteles.github.io#readme" }
+                { name: "📖 README", url: "https://github.com/alvarofonteles/alvarofonteles.github.io#readme" },                
+                { name: "💖 Apoie Minha Jornada", url: "https://github.com/sponsors/alvarofonteles" },
             ],
             featured: true,
             status: "completed",
-            image: "assets/images/projects/badges/portfolio-badge.svg",
+            images: [
+                "assets/images/projects/badges/portfolio-badge.svg",
+                "assets/images/projects/badges/github-sponsors-badge.svg"
+            ],
             architecture: "Static Site",
-            highlights: [
-                "100% Vanilla JavaScript - Zero dependências",
-                "Deploy automático com GitHub Pages", 
-                "Design system com CSS Variables",
-                "Estrutura modular e escalável",
-                "Performance otimizada e SEO ready"
-            ]
         }
     ],
 };
