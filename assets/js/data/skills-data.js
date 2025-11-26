@@ -46,23 +46,48 @@ const SKILLS_DATA = {
 
     transicao: [
         {
+            id: 1,
             category: "🐍 Python & Data Engineering",
+            description: "Fundação técnica sólida em Python, processamento distribuído e arquitetura de dados moderna",
             skills: [
-                "Python", "OOP", "Pandas", "Data Structures", "APIs & REST", "Concurrency", "Dataclasses", "Threading", "Data Analysis", 
-                "Data Cleaning", "Data Visualization", "CSV/Excel/JSON", "DataFrames", "ETL Fundamentals"
+                // 🐍 Python Ecosystem
+                "Python", "OOP", "Data Structures", "Pandas", "DataFrames", 
+                "Data Preparation", "Data Cleaning", "ETL", "Concurrency",
+                
+                // ⚡ PySpark & Distributed Computing
+                "PySpark", "Spark SQL", "Spark DataFrames", "Distributed Processing",
+                "Performance Optimization", "Data Pipelines",
+                
+                // 🏗️ Modern Data Architecture
+                "Delta Lake", "ACID Transactions", "Schema Evolution", 
+                "Medallion Architecture", "Data Lakehouse"
             ]
         },
         {
-            category: "☁️ Cloud & Data Platforms", 
+            id: 2,
+            category: "☁️ Cloud & Data Platforms",  
+            description: "Orquestração de pipelines e computação em nuvem para sistemas escaláveis",
             skills: [
-                "AWS", "AWS S3", "AWS Glue", "Delta Lake", "Data Lakehouse", "Medallion Architecture", "Databricks", 
-                "PySpark Fundamentals", "Distributed Computing"
+                // 🔄 Orchestration
+                "Airflow", "DAGs", "Workflow Orchestration", "Task Dependencies",
+                "Monitoring & Metrics", "CI/CD Pipelines",
+                
+                // ☁️ AWS Data Stack
+                "AWS", "AWS S3", "AWS Glue", "AWS Athena", "Data Lakes",
+                "Serverless ETL", "Cloud Computing"
             ]
         },
         {
+            id: 3,
             category: "🛠️ Data Engineering Tools",
+            description: "Plataformas enterprise e engenharia analytics para dados confiáveis",
             skills: [
-                "Git", "CI/CD", "Airflow", "dbt", "Data Orchestration", "Data Quality", "Docker", "SQL", "Data Pipelines", 
+                // 🔍 Enterprise Platform
+                "Databricks", "Unity Catalog", "Data Governance", "Data Pipelines",
+                
+                // 📊 Analytics Engineering  
+                "dbt", "Data Transformation", "Data Documentation", 
+                "Data Quality", "Testing", "Data Modeling"
             ]
         }
     ]

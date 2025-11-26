@@ -367,15 +367,15 @@
     .education-link,
     .certification-link,
     .contact-link {
-        padding: 0.2rem 0.4rem;   /* ✅ AINDA MENOR no 360px */
-        font-size: 0.7rem;        /* ✅ Fonte ainda menor */
+        padding: 0.2rem 0.4rem;
+        font-size: 0.7rem;
     }
     
     .project-links,
     .education-links,
     .certification-links,
     .contact-links {
-        gap: 0.2rem;              /* ✅ Espaçamento mínimo */
+        gap: 0.2rem;
     }
 }
 

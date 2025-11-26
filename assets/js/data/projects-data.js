@@ -20,8 +20,8 @@ const PROJECTS_DATA = {
         {
             id: 1,
             title: "🐍 FASE 1 - Python Fundamentos",
-            description: "Base sólida de programação Python para Data Engineering: funções, OOP, collections, APIs e programação concorrente.",
-            technologies: ["Python", "OOP", "Data Structures", "Functions", "APIs", "Concurrency", "Dataclasses", "Threading", "Requests", "JSON"],
+            description: "Fundamentos Python completos: desde estruturas de dados e funções até programação orientada a objetos com dataclasses, metaclasses, módulos e construção de APIs REST com autenticação JWT/OAuth2 e banco de dados.",
+            technologies: ["Python", "Data Structures", "Functions", "Dictionary", "OOP", "Modules & Packages", "Dataclasses", "Metaclass", "REST APIs", "SQLAlchemy", "Pydantic", "JSON", "JWT", "OAuth2"],
             links: [
                 { name: "🔗 python_teo", url: "https://github.com/alvarofonteles/python_teo" },
                 { name: "🔗 py_functions_duno", url: "https://github.com/alvarofonteles/py_functions_duno" },
@@ -38,11 +38,11 @@ const PROJECTS_DATA = {
         {
             id: 2,
             title: "📊 FASE 2 - Pandas + ETL",
-            description: "Manipulação de dados em memória com Pandas: ETL de datasets médios, análise exploratória e preparação para PySpark.",
-            technologies: ["Python", "Pandas", "ETL", "Data Analysis", "Data Cleaning", "Data Visualization", "CSV", "Excel", "JSON", "DataFrames"],
+            description: "Domínio do Pandas para manipulação de dados: desde Series/DataFrames básicos até operações avançadas como merge, groupby, pivot e conexão com bancos SQL para preparação de dados e ETL.",
+            technologies: ["Python", "Pandas", "ETL", "Data Preparation", "Data Cleaning", "DataFrames", "Series", "GroupBy", "Merge", "Pivot", "SQL", "CSV", "Excel", "JSON"],
             links: [
                 { name: "🔗 pandas_samuka", url: "https://github.com/alvarofonteles/pandas_samuka" },
-                // { name: "🔗 pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" },
+                // { name: "⭐ pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" },
             ],
             featured: true,
             status: "in-progress",
@@ -53,7 +53,9 @@ const PROJECTS_DATA = {
             title: "⚡ FASE 3 - PySpark Fundamentos",
             description: "Processamento distribuído com PySpark: DataFrames, Spark SQL e transição suave de Pandas para Big Data.",
             technologies: ["PySpark", "DataFrames", "Spark SQL", "Distributed Computing", "ETL"],
-            links: [],
+            links: [
+
+            ],
             featured: true,
             status: "planned",
             images: [ "assets/images/projects/badges/pyspark-badge.svg" ],
@@ -66,17 +68,23 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            images: [ "assets/images/projects/badges/pyspark-advanced-badge.svg" ],
+            images: [ 
+                "assets/images/projects/badges/pyspark-advanced-badge.svg",               
+                "assets/images/projects/badges/delta-lake-badge.svg",
+            ],
         },
         {
             id: 5,
             title: "🏗️ FASE 5 - Lakehouse Architecture",
-            description: "Arquitetura Lakehouse moderna: Data Lake confiável com ACID transactions, schema evolution e medallion architecture.",
-            technologies: ["Delta Lake", "Medallion Architecture", "ACID Transactions", "Schema Evolution", "Data Governance"],
+            description: "Arquitetura Lakehouse moderna: Data Lake confiável com ACID transactions, schema evolution e medallion architecture para pipelines escaláveis.",
+            technologies: ["Delta Lake", "Medallion Architecture", "ACID Transactions", "Schema Evolution", "Data Governance", "Data Pipelines"],   
             links: [],
             featured: true,
             status: "planned",
-            images: [ "assets/images/projects/badges/lakehouse-badge.svg" ],
+            images: [ 
+                "assets/images/projects/badges/lakehouse-badge.svg",                
+                "assets/images/projects/badges/delta-lake-badge.svg",
+            ],
         },
         {
             id: 6,
@@ -111,8 +119,8 @@ const PROJECTS_DATA = {
         {
             id: 9,
             title: "🔍 FASE 9 - Databricks Platform",
-            description: "Plataforma enterprise completa: Lakehouse unified, CI/CD, governance e Unity Catalog.",
-            technologies: ["Databricks", "Unity Catalog", "Spark SQL", "Workflows", "Data Governance"],
+            description: "Plataforma enterprise completa: Lakehouse unified, CI/CD, governance, Unity Catalog e workflows de dados.",
+            technologies: ["Databricks", "Unity Catalog", "Spark SQL", "Workflows", "Data Governance", "Data Engineering"],            
             links: [],
             featured: true,
             status: "planned",
@@ -126,8 +134,8 @@ const PROJECTS_DATA = {
             id: 1,
             title: "📊 Analisador de Dados Python",
             subtitle: "FASE 1-2: 🐍 Python + Pandas",  // Novo campo
-            description: "Conjunto de ferramentas para análise e processamento de dados usando Python puro e Pandas.",
-            technologies: ["Python", "OOP", "Pandas", "ETL", "Data Analysis", "Data Visualization"],
+            description: "Conjunto de ferramentas para preparação e processamento de dados usando Python puro e Pandas.",
+            technologies: ["Python", "OOP", "Pandas", "ETL", "Data Preparation", "Data Cleaning"],            
             links: [
                 { name: "⭐ analisador-dados-python", url: "https://github.com/alvarofonteles/analisador-dados-python" },
             ],
@@ -169,7 +177,7 @@ const PROJECTS_DATA = {
             status: "planned",
             images: [ 
                 "assets/images/projects/badges/pyspark-advanced-badge.svg",
-                "assets/images/projects/badges/delta-lake-badge.svg",
+                "assets/images/projects/badges/aws-badge.svg",
                 "assets/images/projects/badges/databricks-badge.svg"
             ],
             architecture: "ELT" // Arquitetura cloud-native
@@ -183,7 +191,6 @@ const PROJECTS_DATA = {
             links: [
                 { name: "⭐ Repositório", url: "https://github.com/alvarofonteles/alvarofonteles.github.io" },
                 { name: "📖 README", url: "https://github.com/alvarofonteles/alvarofonteles.github.io#readme" },                
-                { name: "💖 Apoie Minha Jornada", url: "https://github.com/sponsors/alvarofonteles" },
             ],
             featured: true,
             status: "completed",

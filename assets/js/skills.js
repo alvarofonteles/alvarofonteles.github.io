@@ -15,15 +15,16 @@ function loadSkillsDivided() {
         `).join('');
     }
 
-    // Em Transição & Aprendizado
+    // // Em Transição & Aprendizado
     const containerTransicao = document.getElementById('skills-transition-track');
     if (containerTransicao) {
         containerTransicao.innerHTML = SKILLS_DATA.transicao.map(category => `
-            <div class="skill-category">
+            <div class="skill-category" data-category-id="${category.id}">
                 <h4>${category.category}</h4>
-                <ul>
-                    ${category.skills.map(skill => `<li>${skill}</li>`).join('')}
-                </ul>
+                <p class="skill-description">${category.description}</p>
+                <div class="tech-tags">
+                    ${category.skills.map(skill => `<span class="tech-tag">${skill}</span>`).join('')}
+                </div>
             </div>
         `).join('');
     }
