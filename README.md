@@ -9,7 +9,7 @@
 
 Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5, CSS3 e JavaScript vanilla**. Perfeito para desenvolvedores que desejam apresentar sua jornada profissional de forma elegante e técnica.
 
-  [![Portfolio](https://img.shields.io/badge/GitHub%20Page-alvarofonteles.github.io-blue?logo=github)](https://alvarofonteles.github.io/)  
+  [![Portfolio](https://img.shields.io/badge/GitHub%20Pages-alvarofonteles.github.io-blue?logo=github)](https://alvarofonteles.github.io/)  
 
 ## ✨ Características
 
@@ -163,6 +163,6 @@ Este projeto está sob a licença MIT.
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.  
 
-[![GitHub](https://img.shields.io/badge/GitHub-%40alvarofonteles-blue?logo=github)](https://github.com/alvarofonteles/) [![Sponsor](https://img.shields.io/badge/Sponsor-%40alvarofonteles-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/alvarofonteles) 
+[![GitHub](https://img.shields.io/badge/GitHub-%40alvarofonteles-blue?logo=github)](https://github.com/alvarofonteles/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%40alvarofonteles-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/alvarofonteles) [![Sponsor](https://img.shields.io/badge/Sponsor-%40alvarofonteles-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/alvarofonteles) 
 
 *"Um template moderno para desenvolvedores modernos"* 🚀

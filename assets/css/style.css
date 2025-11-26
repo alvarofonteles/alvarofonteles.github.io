@@ -249,6 +249,13 @@ h2 {
     font-weight: 600;
 }
 
+.skill-description {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
 /* ===== PROJETOS ===== */
 .project {
     background: var(--light-color);
@@ -667,14 +674,15 @@ h2 {
     display: block;
     text-decoration: none;
     transition: var(--transition);
-    flex-shrink: 0;
+    text-align: center;
 }
 
-.contact-badge {
-    width: 120px;
-    height: auto;
+.contact-badge {    
+    width: auto;
+    height: 25px;
     border-radius: 5px;
     display: block;
+    margin: 0 auto;
     transition: var(--transition);
 }
 
@@ -683,18 +691,11 @@ h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.contact-text {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin: 0;
-    font-weight: 500;
-}
-
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza o badge */
-    padding: 1.5rem; /* Aumenta o padding */
+    justify-content: center;
+    padding: 1.5rem;
     background: var(--light-color);
     border-radius: var(--border-radius);
     border-left: 4px solid #FFD700;
@@ -710,74 +711,6 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin-top: 1rem;
-}
-
-.contact-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--light-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 1.2rem;
-}
-
-/* ===== SEÇÃO SPONSORS ===== */
-.sponsors-section {
-    background: var(--light-color);
-    text-align: center;
-    border-left: 4px solid #ea4aaa; /* ROSA do GitHub Sponsors */
-    transition: var(--transition);
-    padding: 2.5rem;
-    margin: 2rem 0;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-}
-
-.sponsors-section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.sponsors-content h3 {
-    color: var(--dark-color);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.sponsors-content p {
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-    font-weight: 500;
-}
-
-.sponsors-content strong {
-    color: var(--dark-color);
-}
-
-.sponsors-content a {
-    display: inline-block;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-.sponsors-content a:hover {
-    transform: scale(1.05);
-}
-
-.sponsors-content img {
-    border-radius: 6px;
-    display: block;
-}
-
-.sponsors-description {
-    color: var(--text-light);
-    font-size: 0.95rem;
 }
 
 /* ===== FOOTER ===== */
