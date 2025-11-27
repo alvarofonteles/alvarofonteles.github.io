@@ -1,7 +1,7 @@
-// ===== DADOS DOS PROJETOS - ROADMAP DATA ENGINEER =====
-const PROJECTS_DATA = {
-    // Projetos de Aprendizado
-    learning: [
+// ===== DADOS DOS PROJETOS DATA ENGINEERING =====
+const PROJECTS_DE_DATA = {
+    // Roadmap Completo
+    roadmap: [
         {
             id: 0,
             title: "🏗️ Metodologia de Estudos",
@@ -15,7 +15,7 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "completed",  // Porque a organização já está feita!
-            images: [ "assets/images/projects/badges/methodology-badge.svg" ],
+            images: [ "/projects/assets/images/badges/methodology-badge.svg" ]     
         },
         {
             id: 1,
@@ -33,7 +33,7 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "completed",
-            images: [ "assets/images/projects/badges/python-badge.svg" ],
+            images: [ "/projects/assets/images/badges/python-badge.svg" ]
         },
         {
             id: 2,
@@ -46,7 +46,7 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "in-progress",
-            images: [ "assets/images/projects/badges/pandas-badge.svg" ],
+            images: [ "/projects/assets/images/badges/pandas-badge.svg" ]
         },
         {
             id: 3,
@@ -58,7 +58,7 @@ const PROJECTS_DATA = {
             ],
             featured: true,
             status: "planned",
-            images: [ "assets/images/projects/badges/pyspark-badge.svg" ],
+            images: [ "/projects/assets/images/badges/pyspark-badge.svg" ]
         },
         {
             id: 4,
@@ -69,9 +69,9 @@ const PROJECTS_DATA = {
             featured: true,
             status: "planned",
             images: [ 
-                "assets/images/projects/badges/pyspark-advanced-badge.svg",               
-                "assets/images/projects/badges/delta-lake-badge.svg",
-            ],
+                "/projects/assets/images/badges/pyspark-advanced-badge.svg",               
+                "/projects/assets/images/badges/delta-lake-badge.svg",
+            ]
         },
         {
             id: 5,
@@ -82,9 +82,9 @@ const PROJECTS_DATA = {
             featured: true,
             status: "planned",
             images: [ 
-                "assets/images/projects/badges/lakehouse-badge.svg",                
-                "assets/images/projects/badges/delta-lake-badge.svg",
-            ],
+                "/projects/assets/images/badges/lakehouse-badge.svg",                
+                "/projects/assets/images/badges/delta-lake-badge.svg",
+            ]
         },
         {
             id: 6,
@@ -94,7 +94,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            images: [ "assets/images/projects/badges/airflow-badge.svg" ],
+            images: [ "/projects/assets/images/badges/airflow-badge.svg" ]
         },
         {
             id: 7,
@@ -104,7 +104,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            images: [ "assets/images/projects/badges/aws-badge.svg" ],
+            images: [ "/projects/assets/images/badges/aws-badge.svg" ]
         },
         {
             id: 8,
@@ -114,7 +114,7 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            images: [ "assets/images/projects/badges/dbt-badge.svg" ],
+            images: [ "/projects/assets/images/badges/dbt-badge.svg" ]
         },
         {
             id: 9,
@@ -124,12 +124,12 @@ const PROJECTS_DATA = {
             links: [],
             featured: true,
             status: "planned",
-            images: [ "assets/images/projects/badges/databricks-badge.svg" ],
-        },
+            images: [ "/projects/assets/images/badges/databricks-badge.svg" ]
+        }
     ],
 
-    // Projetos Data Engineering
-    portfolio: [
+    // Projetos Hands-on Data Engineering
+    handsOn: [
         {
             id: 1,
             title: "📊 Analisador de Dados Python",
@@ -137,15 +137,14 @@ const PROJECTS_DATA = {
             description: "Conjunto de ferramentas para preparação e processamento de dados usando Python puro e Pandas.",
             technologies: ["Python", "OOP", "Pandas", "ETL", "Data Preparation", "Data Cleaning"],            
             links: [
-                { name: "⭐ analisador-dados-python", url: "https://github.com/alvarofonteles/analisador-dados-python" },
+                { name: "⭐ Repositório", url: "https://github.com/alvarofonteles/analisador-dados-python" },
             ],
             featured: true,
             status: "in-progress",
             images: [ 
-                "assets/images/projects/badges/python-badge.svg",
-                "assets/images/projects/badges/pandas-badge.svg"
-             ],
-            architecture: "ETL" // Domínio dos fundamentos
+                "/projects/assets/images/badges/python-badge.svg",
+                "/projects/assets/images/badges/pandas-badge.svg"
+             ] // Domínio dos fundamentos
         },
         {
             id: 2,
@@ -159,10 +158,9 @@ const PROJECTS_DATA = {
             featured: true,
             status: "planned",
             images: [ 
-                "assets/images/projects/badges/pyspark-badge.svg",
-                "assets/images/projects/badges/delta-lake-badge.svg" 
-            ],
-            architecture: "ETL" // Habilidades Spark tradicionais
+                "/projects/assets/images/badges/pyspark-badge.svg",
+                "/projects/assets/images/badges/delta-lake-badge.svg" 
+            ] // Habilidades Spark tradicionais
         },
         {
             id: 3,
@@ -176,29 +174,10 @@ const PROJECTS_DATA = {
             featured: true,
             status: "planned",
             images: [ 
-                "assets/images/projects/badges/pyspark-advanced-badge.svg",
-                "assets/images/projects/badges/aws-badge.svg",
-                "assets/images/projects/badges/databricks-badge.svg"
-            ],
-            architecture: "ELT" // Arquitetura cloud-native
-        },
-        {
-            id: "portfolio-template",
-            title: "🚀 Portfolio Template - GitHub Pages",
-            subtitle: "Template Moderno para Desenvolvedores",
-            description: "Modelo de portfolio profissional moderno e responsivo, desenvolvido com HTML5, CSS3 e JavaScript vanilla.",
-            technologies: ["HTML5", "CSS3", "JavaScript", "Vanilla JS", "SEO", "GitHub Pages", "Responsive Design", "CSS Grid", "Flexbox"],
-            links: [
-                { name: "⭐ Repositório", url: "https://github.com/alvarofonteles/alvarofonteles.github.io" },
-                { name: "📖 README", url: "https://github.com/alvarofonteles/alvarofonteles.github.io#readme" },                
-            ],
-            featured: true,
-            status: "completed",
-            images: [
-                "assets/images/projects/badges/portfolio-badge.svg",
-                "assets/images/projects/badges/github-sponsors-badge.svg"
-            ],
-            architecture: "Static Site",
+                "/projects/assets/images/badges/pyspark-advanced-badge.svg",
+                "/projects/assets/images/badges/aws-badge.svg",
+                "/projects/assets/images/badges/databricks-badge.svg"
+            ] // Arquitetura cloud-native
         }
-    ],
-};
+    ]    
+}; 

@@ -27,7 +27,6 @@ function loadExperiences() {
             </div>
             
             <div class="experience-technologies">
-                <h4>Tecnologias:</h4>
                 <div class="tech-tags">
                     ${exp.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
@@ -35,8 +34,3 @@ function loadExperiences() {
         </div>
     `).join('');    
 }
-
-// Exportar funções
-window.ExperienceManager = {
-    loadExperiences,
-};
