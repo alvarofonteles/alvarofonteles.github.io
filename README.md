@@ -9,7 +9,7 @@
 
 Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5, CSS3 e JavaScript vanilla**. Perfeito para desenvolvedores que desejam apresentar sua jornada profissional de forma elegante e técnica.
 
-  [![Portfolio](https://img.shields.io/badge/GitHub%20Pages-alvarofonteles.github.io-blue?logo=github)](https://alvarofonteles.github.io/)  
+  [![Portfolio](https://img.shields.io/badge/GitHub%20Pages-alvarofonteles.github.io-000000?logo=githubpages)](https://alvarofonteles.github.io/)  
 
 ## ✨ Características
 
@@ -38,6 +38,14 @@ Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5,
 - **📜 Certificações** - Cursos e certificações técnicas
 - **📞 Contato** - Links para redes sociais
 
+### **🚀 Página Data Engineering (Opcional)**
+- **📊 Projetos DE** - Página dedicada com roadmap completo de Data Engineering
+- **🎯 Roadmap 9 Fases** - Estrutura organizada de aprendizado
+- **🛠 Stack Moderna** - Python, PySpark, Delta Lake, AWS, Airflow, dbt, Databricks
+- **💻 Implementações** - Projetos hands-on e casos práticos
+
+*Para ativar: Configure `featured: true` em `projects-de-data.js` e acesse `/projects/index.html`*
+
 ## 🛠 Stack de Desenvolvimento
 
 ### **🌐 Frontend & Core**
@@ -54,48 +62,71 @@ Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5,
 ```
 portfolio-template/
 │
-├── 📄 index.html              # Página principal
+├── 📄 index.html              # Página principal (implementação exemplo)
 ├── 📁 .github/                # GitHub configurations
 │   └── 📄 FUNDING.yml         # Sponsorship configuration
-├── 📁 assets/
-│   ├── 📁 css/
-│   │   ├── style.css           # Estilos principais + variáveis CSS
-│   │   └── responsive.css      # Media queries + mobile
-│   ├── 📁 js/
-│   │   ├── script.js           # Core application e inicialização
-│   │   ├── skills.js           # Gerenciamento de habilidades
-│   │   ├── certifications.js   # Gerenciamento de certificações
-│   │   ├── experiences.js      # Timeline profissional
-│   │   ├── projects.js         # Gerenciamento de projetos
-│   │   ├── educations.js       # Gerenciamento de formação acadêmica
-│   │   └── 📁 data/            # Dados estruturados
-│   │       ├── skills-data.js          # Dados das habilidades
-│   │       ├── certifications-data.js  # Dados das certificações  
-│   │       ├── experiences-data.js     # Dados da experiência
-│   │       ├── projects-data.js        # Dados dos projetos
-│   │       └── educations-data.js      # Dados da formação
-│   └── 📁 images/
-│       ├── profile.jpg         # Profile picture
-│       └── 📁 projects/        # Project screenshots
-│           └── 📁 badges/      # Badges dos projetos e contatos
-│               ├── airflow-badge.svg
-│               ├── aws-badge.svg
-│               ├── cv-badge.svg
-│               ├── databricks-badge.svg
-│               ├── dbt-badge.svg
-│               ├── delta-lake-badge.svg
-│               ├── email-badge.svg
-│               ├── github-badge.svg
-│               ├── github-sponsors-badge.svg
-│               ├── lakehouse-badge.svg
-│               ├── linkedin-badge.svg
-│               ├── methodology-badge.svg
-│               ├── pandas-badge.svg
-│               ├── portfolio-badge.svg
-│               ├── pyspark-advanced-badge.svg
-│               ├── pyspark-badge.svg
-│               └── python-badge.svg
-│
+├── 📁 template/               # Base do template reutilizável
+│   └── 📁 assets/
+│       ├── 📁 css/
+│       │   ├── style.css           # Estilos principais + variáveis CSS
+│       │   └── responsive.css      # Media queries + mobile
+│       ├── 📁 js/
+│       │   ├── core.js             # Módulo core compartilhado
+│       │   ├── script.js           # Core application e inicialização
+│       │   └── 📁 modules/         # Módulos organizados
+│       │       ├── skills.js           # Gerenciamento de habilidades
+│       │       ├── certifications.js   # Gerenciamento de certificações
+│       │       ├── experiences.js      # Timeline profissional
+│       │       ├── projects.js         # Gerenciamento de projetos
+│       │       ├── educations.js       # Gerenciamento de formação acadêmica
+│       │       ├── contacts.js         # Gerenciamento dos contatos
+│       │       └── 📁 data/            # Dados estruturados
+│       │           ├── skills-data.js          # Dados das habilidades
+│       │           ├── certifications-data.js  # Dados das certificações  
+│       │           ├── experiences-data.js     # Dados da experiência
+│       │           ├── projects-data.js        # Dados dos projetos
+│       │           ├── educations-data.js      # Dados da formação
+│       │           └── contacts-data.js        # Dados dos contatos
+│       └── 📁 images/
+│           ├── profile.jpg         # Profile picture
+│           └── 📁 projects/        # Project screenshots
+│               └── 📁 badges/      # Badges dos projetos e contatos
+│                   ├── aws-badge.svg
+│                   ├── cv-badge.svg
+│                   ├── delta-lake-badge.svg
+│                   ├── email-badge.svg
+│                   ├── github-badge.svg
+│                   ├── github-sponsors-badge.svg
+│                   ├── linkedin-badge.svg
+│                   ├── portfolio-badge.svg
+│                   ├── pyspark-advanced-badge.svg
+│                   └── python-badge.svg
+├── 📁 projects/               # Página dedicada Data Engineering
+│   │   index.html             # Página completa de projetos DE
+│   └── 📁 assets/
+│       ├── 📁 images/
+│       │   └── 📁 badges/     # Badges específicos Data Engineering
+│       │           ├── airflow-badge.svg
+│       │           ├── aws-badge.svg
+│       │           ├── databricks-badge.svg
+│       │           ├── dbt-badge.svg
+│       │           ├── delta-lake-badge.svg
+│       │           ├── lakehouse-badge.svg
+│       │           ├── methodology-badge.svg
+│       │           ├── pandas-badge.svg
+│       │           ├── pyspark-advanced-badge.svg
+│       │           ├── pyspark-badge.svg
+│       │           └── python-badge.svg
+│       └── 📁 js/
+│           ├── script.js      # Inicialização específica DE
+│           └── 📁 modules/    # Módulos específicos Data Engineering
+│               ├── skills-de.js            # Gerenciamento de habilidades DE
+│               ├── certifications-de.js    # Gerenciamento de projetos DE
+│               ├── projects-de.js          # Gerenciamento de projetos DE
+│               └── 📁 data/          # Dados específicos DE
+│                   ├── skills-de-data.js           # Dados dos projetos DE
+│                   ├── certifications-de-data.js   # Dados dos projetos DE
+│                   └── projects-de-data.js         # Dados das habilidades DE
 ├── 📄 README.md               # Project documentation
 ├── 📄 LICENSE                 # MIT License
 ├── 📄 SECURITY.md             # Security policy
@@ -112,24 +143,38 @@ cd alvarofonteles.github.io
 
 ### **2. 🎨 Personalizar**
 - Edite `index.html` com suas informações pessoais
-- Atualize os arquivos em `assets/js/data/` com seus dados:
+- Atualize os arquivos em `template/assets/js/modules/data/` com seus dados:
   - `projects-data.js` - Seus projetos
   - `experiences-data.js` - Sua experiência profissional  
   - `educations-data.js` - Sua formação acadêmica
   - `skills-data.js` - Suas habilidades técnicas
   - `certifications-data.js` - Suas certificações
-- Atualize os módulos em `assets/js/` para refletir seus dados:
+  - `contact-data.js` - Seus contatos
+- Atualize os módulos em `template/assets/js/modules/` para refletir seus dados:
   - `projects.js` - Lógica dos projetos
   - `experiences.js` - Lógica da experiência
   - `educations.js` - Lógica da formação
   - `skills.js` - Lógica das habilidades
   - `certifications.js` - Lógica das certificações
-- Substitua imagens em `assets/images/`:
+  - `contact-data.js` - Lógica dos contatos
+- Substitua imagens em `template/assets/images/`:
   - `profile.jpg` - Sua foto de perfil
   - `projects/badges/` - Badges dos seus projetos
-- Ajuste cores e temas no `assets/css/style.css`
+- Ajuste cores e temas no `template/assets/css/style.css`
 - Atualize metatags e SEO no `<head>` do `index.html`
 - Configure suas redes sociais nos links de contato
+
+### **🎯 Personalização Avançada (Data Engineering)**
+- Para criar página DE personalizada, edite `/projects/index.html`
+- Atualize dados em `/projects/assets/js/modules/data/`:
+  - `skills-de-data.js` - Suas habilidades em DE
+  - `certifications-de-data.js` - Suas certificações em DE
+  - `projects-de-data.js` - Seus projetos de Data Engineering  
+- Modifique módulos em `/projects/assets/js/modules/`:  
+  - `skills-de.js` - Lógica das habilidades DE
+  - `certifications-de.js` - Lógica das certificações DE
+  - `projects-de.js` - Lógica dos projetos DE
+- Adicione badges personalizados em `/projects/assets/images/badges/`
 
 ### **3. 🌐 Deploy (GitHub Pages)**
 ```bash
@@ -163,6 +208,6 @@ Este projeto está sob a licença MIT.
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.  
 
-[![GitHub](https://img.shields.io/badge/GitHub-%40alvarofonteles-blue?logo=github)](https://github.com/alvarofonteles/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%40alvarofonteles-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/alvarofonteles) [![Sponsor](https://img.shields.io/badge/Sponsor-%40alvarofonteles-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/alvarofonteles) 
+[![GitHub](https://img.shields.io/badge/GitHub-%40alvarofonteles-000000?logo=github)](https://github.com/alvarofonteles/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%40alvarofonteles-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/alvarofonteles) [![Sponsor](https://img.shields.io/badge/Sponsor-%40alvarofonteles-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/alvarofonteles) 
 
 *"Um template moderno para desenvolvedores modernos"* 🚀

@@ -176,9 +176,16 @@ h2 {
 }
 
 .highlight-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--text-light);
     font-weight: 500;
+}
+
+.highlight-text-head {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 /* ===== HABILIDADES ===== */
@@ -285,9 +292,10 @@ h2 {
 }
 
 .project-image {
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    margin-bottom: 6px;
+    margin-right: 4px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .project-meta {
@@ -680,7 +688,6 @@ h2 {
 .contact-badge {    
     width: auto;
     height: 25px;
-    border-radius: 5px;
     display: block;
     margin: 0 auto;
     transition: var(--transition);

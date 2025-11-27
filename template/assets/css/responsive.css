@@ -247,8 +247,15 @@
         height: 80px;
     }
 
-    .tagline {
-        font-size: 0.8rem;
+    .tagline,
+    .highlight-text {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .highlight-number,
+    .highlight-text-head {
+        font-size: 1.4rem;
         padding: 0.5rem 0.8rem;
     }
 

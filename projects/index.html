@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineering - Álvaro👨‍💻🎲🇧🇷</title>
+
+    <!-- FAVICON -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link rel="shortcut icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+    <!-- Usa o mesmo CSS do template -->
+    <link rel="stylesheet" href="/template/assets/css/style.css">
+    <link rel="stylesheet" href="/template/assets/css/responsive.css">
+
+    <!-- SEO -->
+    <meta name="description" content="Analista Sênior Oracle PL/SQL | APEX | Forms | Java">
+    <meta name="keywords" content="Transição para Engenharia de Dados Moderna">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <img src="/template/assets/images/profile.jpg" alt="Alvaro" class="profile-img">
+            <h1>Álvaro👨‍💻🎲🇧🇷</h1>
+            <div class="tagline">
+                Projetos Data Engineering
+                </br> Roadmap Prático & Projetos Hands-on
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#certificacoes">Certificações</a>
+            <a href="#projetos">Projetos</a>
+            <a href="/index.html">Voltar para Home</a>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+        <!-- SOBRE -->
+        <section id="sobre" class="fade-in">
+            <div class="highlight-item">
+                <span class="highlight-text-head">Transição Estratégica</span>
+                <span class="highlight-text">
+                    Em transição estratégica para Engenharia de Dados, aplicando
+                    experiência em sistemas críticos em arquiteturas modernas com PySpark, Delta Lake
+                    e AWS.
+                </span>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="fade-in">
+            <div class="skills-category">
+                <h3>🚀 Em Transição & Aprendizado</h3>
+                <p class="section-subtitle">
+                    Tecnologias em estudo para migração para Engenharia de Dados Moderna
+                </p>
+                <div class="skills-grid" id="skills-transition">
+                    <!-- JavaScript vai preencher Python, AWS, Data Engineering -->
+                </div>
+            </div>
+        </section>
+
+        <!-- certificacoes E CERTIFICAÇÕES -->
+        <section id="certificacoes" class="fade-in">
+            <h2>📜 Certificações e Cursos</h2>
+            <p class="section-subtitle">
+                Especializações técnicas e atualizações profissionais
+            </p>
+            <div class="certifications-grid" id="certifications-container">
+                <!-- JavaScript vai preencher aqui -->
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos" class="fade-in">
+            <h2>📂 Jornada para Engenharia de Dados</h2>
+
+            <div class="projects-category">
+                <h3>🎯 Roadmap de 9 Fases</h3>
+                <p class="section-subtitle">
+                    Desenvolvendo expertise através de projetos hands-on:
+                </p>
+
+                <div class="projects-grid" id="projects-container-hoadmap">
+                    <!-- JavaScript vai preencher aqui -->
+                </div>
+            </div>
+
+            <div class="projects-category">
+                <h3>🚀 Projetos Hands-on</h3>
+                <p class="section-subtitle">
+                    Implementações práticas do roadmap de Data Engineering:
+                </p>
+
+                <div class="projects-grid" id="de-projects-container">
+                    <!-- JavaScript vai preencher aqui -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Álvaro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Menu Hamburger Mobile -->
+    <button class="menu-toggle" id="menuToggle">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#sobre" onclick="closeMenu()">Sobre</a>
+        <a href="#habilidades" onclick="closeMenu()">Habilidades</a>
+        <a href="#certificacoes" onclick="closeMenu()">Certificações</a>
+        <a href="#projetos" onclick="closeMenu()">Projetos</a>
+        <a href="/index.html" onclick="closeMenu()">Voltar para Home</a>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+    <!-- SCRIPTS -->
+    <!-- CORE -->
+    <script src="/template/assets/js/core.js"></script>
+    <!-- Primeiro carrega os DADOS -->
+    <script src="/projects/assets/js/modules/data/skills-de-data.js"></script>
+    <script src="/projects/assets/js/modules/data/certifications-de-data.js"></script>
+    <script src="/projects/assets/js/modules/data/projects-de-data.js"></script>
+    <!-- Depois carrega as FUNÇÕES -->     
+    <script src="/projects/assets/js/modules/skills-de.js"></script>
+    <script src="/projects/assets/js/modules/certifications-de.js"></script>
+    <script src="/projects/assets/js/modules/projects-de.js"></script>
+    <!-- Por último o script principal -->
+    <script src="/projects/assets/js/script.js"></script>
+    
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

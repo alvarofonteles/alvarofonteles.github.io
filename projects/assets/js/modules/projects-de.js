@@ -1,14 +1,14 @@
-// ===== CARREGAR PROJETOS =====
-function loadProjects() {
-    // Projetos Práticos
-    const container = document.getElementById('projects-container');
+// ===== CARREGAR PROJETOS DATA ENGINEERING =====
+function loadDEProjects() {
+    // Roadmap Completo
+    const containerHoadmap = document.getElementById('projects-container-hoadmap');
     
-    if (!container) {
+    if (!containerHoadmap || !PROJECTS_DE_DATA) {
         return;
-    }
-
-    const featuredProjects = PROJECTS_DATA.learning.filter(exp => exp.featured);    
-    container.innerHTML = featuredProjects.map(project => `
+    }    
+    
+    const featuredHoadmap = PROJECTS_DE_DATA.roadmap.filter(prd => prd.featured);    
+    containerHoadmap.innerHTML = featuredHoadmap.map(project => `
         <div class="project" data-project-id="${project.id}">
     
             ${project.images ? project.images.map(img => `<img src="${img}" alt="" class="project-image">`).join('') : ''}
@@ -22,7 +22,7 @@ function loadProjects() {
             
             <div class="project-meta">
                 <span class="project-status status-${project.status}">
-                    ${getStatusText(project.status)}
+                    ${getDEStatusText(project.status)}
                 </span>
             </div>
 
@@ -38,22 +38,22 @@ function loadProjects() {
         </div>
     `).join('');
 
-    // Projetos Data Engineering
-    const containerPortfolio = document.getElementById('projects-container-portfolio');
+    // Projetos Práticos
+    const container = document.getElementById('de-projects-container');
     
-    if (!containerPortfolio) {
+    if (!container || !PROJECTS_DE_DATA) {
         return;
     }
+
+    const featuredProjects = PROJECTS_DE_DATA.handsOn.filter(project => project.featured);
     
-    const featuredPortfolioProjects = PROJECTS_DATA.portfolio.filter(exp => exp.featured);    
-    containerPortfolio.innerHTML = featuredPortfolioProjects.map(project => `
+    container.innerHTML = featuredProjects.map(project => `
         <div class="project" data-project-id="${project.id}">
-    
+            
             ${project.images ? project.images.map(img => `<img src="${img}" alt="" class="project-image">`).join('') : ''}
 
             <h4>${project.title}</h4>
-            <p class="project-subtitle">${project.subtitle}</p>    
-
+            ${project.subtitle ? `<p class="project-subtitle">${project.subtitle}</p>` : ''}
             <p>${project.description}</p>
             
             <div class="tech-tags">
@@ -62,11 +62,11 @@ function loadProjects() {
             
             <div class="project-meta">
                 <span class="project-status status-${project.status}">
-                    ${getStatusText(project.status)}
+                    ${getDEStatusText(project.status)}
                 </span>
             </div>
 
-            ${project.links ? `
+            ${project.links && project.links.length > 0 ? `
                 <div class="project-links">
                     ${project.links.map(link => `
                         <a href="${link.url}" target="_blank" class="project-link">
@@ -80,17 +80,12 @@ function loadProjects() {
 }
 
 // ===== TEXTO DO STATUS =====
-function getStatusText(status) {
+function getDEStatusText(status) {
     const statusMap = {
         'completed': '✅ Concluído',
-        'in-progress': '🔄 Em Andamento',
+        'in-progress': '🔄 Em Andamento', 
         'planned': '📅 Planejado',
-        'paused': '🔏 Parado'
+        'paused': '⏸️ Pausado'
     };
     return statusMap[status] || status;
 }
-
-// Exportar funções
-window.EducationManager = {
-    loadProjects
-};

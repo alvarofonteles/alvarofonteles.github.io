@@ -1,7 +1,7 @@
 // ===== DADOS DOS CURSOS =====
 const CERTIFICATIONS_DATA = [
     {
-        id: 1,
+        id: 5,
         title: "Oracle APEX do Básico ao Avançado",
         institution: "Udemy",
         period: "Jul 2024",
@@ -14,7 +14,7 @@ const CERTIFICATIONS_DATA = [
         featured: true
     },
     {
-        id: 2,
+        id: 4,
         title: "The Complete Oracle APEX Fundamentals Course",
         institution: "Udemy", 
         period: "Jul 2024",
@@ -40,7 +40,7 @@ const CERTIFICATIONS_DATA = [
         featured: true
     },
     {
-        id: 4,
+        id: 2,
         title: "Formação Spring Framework",
         institution: "Alura",
         period: "Abr 2022",
@@ -53,7 +53,7 @@ const CERTIFICATIONS_DATA = [
         featured: true
     },
     {
-        id: 5,
+        id: 1,
         title: "Microsserviços Java com Spring Boot e Spring Boot Cloud",
         institution: "Udemy",
         period: "Abr 2022",
@@ -64,44 +64,5 @@ const CERTIFICATIONS_DATA = [
             { name: "Microsserviços", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9872fa18-5c07-4088-be97-810b78a4c276.pdf" }
         ],
         featured: true
-    },    
-    {
-        id: 6,
-        title: "Aprenda Programação PYTHON para Iniciantes",
-        institution: "Udemy",
-        period: "Out 2025",
-        status: "completed",
-        description: "Curso Básico Introdutório para Iniciantes em Programação Python com aulas 100% Hands on!",
-        technologies: ["Python", "Programação", "Lógica", "Strings", "Variáveis"],
-        links: [
-            { name: "Python para Iniciantes", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-29cd6b9e-344f-45e8-a0b9-8669575e4b35.pdf" }
-        ],
-        featured: true
-    },
-    {
-        id: 7,
-        title: "Engenharia de Dados com Databricks, Spark e PySpark",
-        institution: "Udemy",
-        period: "Nov 2025",
-        status: "planned",
-        description: "Aprenda as Ferramentas Essenciais para Manipulação e Análise de Grandes Volumes de Dados",
-        technologies: ["Databricks", "PySpark", "Delta Lake", "Data Pipelines", "Medallion", "Lakehouse"],
-        links: [
-            // { name: "Engenharia de Dados", url: "#" }
-        ],
-        featured: true
-    },
-    {
-        id: 8,
-        title: "Formação Engenharia de Dados: Domine Big Data! 2025",
-        institution: "Udemy",
-        period: "Dez 2025",
-        status: "planned",
-        description: "Aprenda Engenharia de Dados e Comece sua Preparação para a Profissão da Área de Tecnologia que mais Cresce no mundo!",
-        technologies: ["Python", "Streaming", "ETL", "Data Crawlers", "Spark", "Warehouse", "Data Lake", "SQL", "Cloud"],
-        links: [
-            // { name: "Formação Engenharia de Dados", url: "#" }
-        ],
-        featured: true
-    }  
+    }
 ];
