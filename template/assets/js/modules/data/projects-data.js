@@ -27,7 +27,7 @@ const PROJECTS_DATA = {
             description: "Portfólio de projetos desenvolvidos com Python, processamento de dados e soluções em cloud.",
             technologies: ["Python", "Pandas", "PySpark", "Delta Lake", "AWS", "Airflow", "dbt", "Databricks"],
             links: [
-                { name: "🚀 Ver Projetos", url: "/projects/index.html" }                
+                { name: "🚀 Ver Projetos", url: "/projects" }                
             ],
             featured: true,
             status: "in-progress",

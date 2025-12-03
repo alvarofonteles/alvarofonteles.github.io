@@ -51,20 +51,28 @@ const PROJECTS_DE_DATA = {
         {
             id: 3,
             title: "⚡ FASE 3 - PySpark Fundamentos",
-            description: "Processamento distribuído com PySpark: DataFrames, Spark SQL e transição suave de Pandas para Big Data.",
+            description: "Processamento distribuído com PySpark: criação de DataFrames, Spark SQL e transição suave de Pandas para Big Data.",
             technologies: ["PySpark", "DataFrames", "Spark SQL", "Distributed Computing", "ETL"],
-            links: [
-
-            ],
+            links: [],
             featured: true,
             status: "planned",
             images: [ "/projects/assets/images/badges/pyspark-badge.svg" ]
         },
         {
             id: 4,
-            title: "⚡ FASE 4 - PySpark Avançado + Delta Lake",
-            description: "Pipelines production-ready com PySpark avançado: otimização, Delta Lake e qualidade de dados em escala.",
-            technologies: ["PySpark", "Delta Lake", "Data Quality", "Performance", "Optimization"],
+            title: "🔍 FASE 4 - Databricks Platform",
+            description: "Plataforma enterprise completa: clusters, notebooks, Unity Catalog, workflows e governança de dados. Aqui você aprende a usar Databricks como ambiente central para Big Data.",
+            technologies: ["Databricks", "Unity Catalog", "Spark SQL", "Workflows", "Data Governance", "Data Engineering"],            
+            links: [],
+            featured: true,
+            status: "planned",
+            images: [ "/projects/assets/images/badges/databricks-badge.svg" ]
+        },
+        {
+            id: 5,
+            title: "⚡ FASE 5 - PySpark Avançado + Delta Lake",
+            description: "Pipelines production-ready com PySpark avançado: otimização, Delta Lake e qualidade de dados em escala. Agora sim faz sentido aplicar Delta Lake dentro do Databricks.",
+            technologies: ["PySpark", "Delta Lake", "Data Quality", "Performance", "Optimization", "ACID Transactions", "Schema Evolution"],
             links: [],
             featured: true,
             status: "planned",
@@ -74,9 +82,9 @@ const PROJECTS_DE_DATA = {
             ]
         },
         {
-            id: 5,
-            title: "🏗️ FASE 5 - Lakehouse Architecture",
-            description: "Arquitetura Lakehouse moderna: Data Lake confiável com ACID transactions, schema evolution e medallion architecture para pipelines escaláveis.",
+            id: 6,
+            title: "🏗️ FASE 6 - Lakehouse Architecture",
+            description: "Arquitetura Lakehouse moderna: integração do Delta Lake com a medallion architecture, garantindo escalabilidade, confiabilidade e governança em pipelines corporativos.",
             technologies: ["Delta Lake", "Medallion Architecture", "ACID Transactions", "Schema Evolution", "Data Governance", "Data Pipelines"],   
             links: [],
             featured: true,
@@ -87,9 +95,9 @@ const PROJECTS_DE_DATA = {
             ]
         },
         {
-            id: 6,
-            title: "🔄 FASE 6 - Airflow Orchestration",
-            description: "Orchestration de pipelines com Airflow: agendamento, monitoramento, dependencies e pipelines production-ready.",
+            id: 7,
+            title: "🔄 FASE 7 - Airflow Orchestration",
+            description: "Orquestração de pipelines com Airflow: agendamento, monitoramento, dependencies e pipelines prontos para produção.",
             technologies: ["Airflow", "DAGs", "Orchestration", "Monitoring", "Scheduling"],
             links: [],
             featured: true,
@@ -97,8 +105,8 @@ const PROJECTS_DE_DATA = {
             images: [ "/projects/assets/images/badges/airflow-badge.svg" ]
         },
         {
-            id: 7,
-            title: "☁️ FASE 7 - AWS Data Stack",
+            id: 8,
+            title: "☁️ FASE 8 - AWS Data Stack",
             description: "Cloud computing para dados: S3 (storage), Glue (ETL serverless), Athena (query) e integração PySpark com AWS.",
             technologies: ["AWS S3", "AWS Glue", "AWS Athena", "boto3", "Cloud Computing"],
             links: [],
@@ -107,25 +115,16 @@ const PROJECTS_DE_DATA = {
             images: [ "/projects/assets/images/badges/aws-badge.svg" ]
         },
         {
-            id: 8,
-            title: "📊 FASE 8 - dbt Analytics Engineering",
-            description: "Engenharia analytics moderna: camada transformação com dbt, documentação, testes e data quality.",
+            id: 9,
+            title: "📊 FASE 9 - dbt Analytics Engineering",
+            description: "Engenharia analytics moderna: camada de transformação com dbt, documentação, testes e data quality.",
             technologies: ["dbt", "Data Transformation", "Analytics Engineering", "Documentation", "Testing", "Data Quality"],
             links: [],
             featured: true,
             status: "planned",
             images: [ "/projects/assets/images/badges/dbt-badge.svg" ]
-        },
-        {
-            id: 9,
-            title: "🔍 FASE 9 - Databricks Platform",
-            description: "Plataforma enterprise completa: Lakehouse unified, CI/CD, governance, Unity Catalog e workflows de dados.",
-            technologies: ["Databricks", "Unity Catalog", "Spark SQL", "Workflows", "Data Governance", "Data Engineering"],            
-            links: [],
-            featured: true,
-            status: "planned",
-            images: [ "/projects/assets/images/badges/databricks-badge.svg" ]
         }
+
     ],
 
     // Projetos Hands-on Data Engineering
@@ -149,9 +148,9 @@ const PROJECTS_DE_DATA = {
         {
             id: 2,
             title: "🔄 Pipeline ETL - Arquitetura Tradicional",
-            subtitle: "FASE 3-4: ⚡ PySpark + Delta",
-            description: "Pipeline ETL clássico: extração, transformação e depois carga. Demonstra fundamentos sólidos de engenharia de dados.",
-            technologies: ["PySpark", "Delta Lake", "Airflow", "Python", "SQL"],
+            subtitle: "FASE 3-4: ⚡ PySpark + Databricks",
+            description: "Pipeline ETL clássico: extração, transformação e carga, implementado com PySpark dentro do Databricks. Demonstra fundamentos sólidos de engenharia de dados distribuída.",
+            technologies: ["PySpark", "Databricks", "Airflow", "Python", "SQL"],
             links: [
                 // { name: "🔗 pipeline-etl-tradicional", url: "https://github.com/alvarofonteles/pipeline-etl-tradicional" },
             ],
@@ -159,15 +158,15 @@ const PROJECTS_DE_DATA = {
             status: "planned",
             images: [ 
                 "/projects/assets/images/badges/pyspark-badge.svg",
-                "/projects/assets/images/badges/delta-lake-badge.svg" 
-            ] // Habilidades Spark tradicionais
+                "/projects/assets/images/badges/databricks-badge.svg" 
+            ]
         },
         {
             id: 3,
             title: "⚡ Pipeline ELT - Arquitetura Moderna",
-            subtitle: "FASE 5+: 🏗️ Arquitetura Moderna",
-            description: "Pipeline ELT moderno com Delta Lake: extração, carga direta no data lake e transformação sob demanda. Arquitetura cloud-native.",
-            technologies: ["PySpark", "Delta Lake", "dbt", "AWS S3", "Databricks", "Airflow"],
+            subtitle: "FASE 5+: 🏗️ Delta Lake + Lakehouse",
+            description: "Pipeline ELT moderno com Delta Lake: extração, carga direta no data lake e transformação sob demanda. Implementa arquitetura cloud-native com Databricks, dbt e AWS.",
+            technologies: ["PySpark", "Delta Lake", "Databricks", "dbt", "AWS S3", "Airflow"],
             links: [
                 // { name: "🔗 pipeline-elt-moderno", url: "https://github.com/alvarofonteles/pipeline-elt-moderno" },
             ],
@@ -175,9 +174,9 @@ const PROJECTS_DE_DATA = {
             status: "planned",
             images: [ 
                 "/projects/assets/images/badges/pyspark-advanced-badge.svg",
-                "/projects/assets/images/badges/aws-badge.svg",
-                "/projects/assets/images/badges/databricks-badge.svg"
-            ] // Arquitetura cloud-native
+                "/projects/assets/images/badges/databricks-badge.svg",
+                "/projects/assets/images/badges/aws-badge.svg"
+            ]
         }
     ]    
 }; 
