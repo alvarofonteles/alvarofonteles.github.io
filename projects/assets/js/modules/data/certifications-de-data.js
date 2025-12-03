@@ -19,24 +19,24 @@ const CERTIFICATIONS_DE_DATA = [
         institution: "Udemy",
         period: "Dez 2025",
         status: "planned",
-        description: "Aprenda as Ferramentas Essenciais para Manipulação e Análise de Grandes Volumes de Dados",
-        technologies: ["Databricks", "PySpark", "Delta Lake", "Data Pipelines", "Medallion", "Lakehouse"],
+        description: "Curso direto e prático para aplicar PySpark dentro do Databricks. Aborda criação de clusters, manipulação de DataFrames, Spark SQL e implementação da arquitetura Medallion com Delta Lake.",
+        technologies: ["Databricks", "PySpark", "Spark SQL", "DataFrames", "Delta Lake", "Medallion Architecture"],
         links: [
-            // { name: "Engenharia de Dados", url: "#" }
+            // { name: "Databricks PySpark", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-xxxxxx.pdf" }
         ],
         featured: true
     },
     {
         id: 3,
-        title: "Formação Engenharia de Dados: Domine Big Data! 2025",
+        title: "Engenharia de Dados com Databricks - SQL, Spark e Lakehouse",
         institution: "Udemy",
         period: "Jan 2026",
         status: "planned",
-        description: "Aprenda Engenharia de Dados e Comece sua Preparação para a Profissão da Área de Tecnologia que mais Cresce no mundo!",
-        technologies: ["Python", "Streaming", "ETL", "Data Crawlers", "Spark", "Warehouse", "Data Lake", "SQL", "Cloud"],
+        description: "Curso focado em Databricks SQL, Unity Catalog e Lakehouse. Ensina governança de dados, CI/CD, cargas incrementais e aplicação da arquitetura Medallion em pipelines escaláveis.",
+        technologies: ["Databricks", "SQL", "Unity Catalog", "Lakehouse", "Medallion Architecture", "Governança"],
         links: [
-            // { name: "Formação Engenharia de Dados", url: "#" }
+            // { name: "Databricks SQL Lakehouse", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-xxxxxx.pdf" }
         ],
         featured: true
-    }  
+    }
 ];
