@@ -685,9 +685,7 @@ h2 {
     text-align: center;
 }
 
-.contact-badge {    
-    width: auto;
-    height: 25px;
+.contact-badge {
     display: block;
     margin: 0 auto;
     transition: var(--transition);

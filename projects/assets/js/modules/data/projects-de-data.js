@@ -42,7 +42,7 @@ const PROJECTS_DE_DATA = {
             technologies: ["Python", "Pandas", "ETL", "Data Preparation", "Data Cleaning", "DataFrames", "Series", "GroupBy", "Merge", "Pivot", "SQL", "CSV", "Excel", "JSON"],
             links: [
                 { name: "🔗 pandas_samuka", url: "https://github.com/alvarofonteles/pandas_samuka" },
-                // { name: "⭐ pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" },
+                { name: "⭐ pandas_teo", url: "https://github.com/alvarofonteles/pandas_teo" },
             ],
             featured: true,
             status: "in-progress",

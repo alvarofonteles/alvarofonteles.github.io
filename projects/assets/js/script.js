@@ -4,6 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     CORE.initializeCore();    
         
     if (typeof loadDESkills === 'function') loadDESkills();
+    if (typeof loadDEProjects === 'function') loadDEProjects();
     if (typeof loadDECertifications === 'function') loadDECertifications();
-    if (typeof loadDEProjects === 'function') loadDEProjects();    
 });

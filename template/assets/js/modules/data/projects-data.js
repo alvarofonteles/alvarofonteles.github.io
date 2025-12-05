@@ -6,7 +6,7 @@ const PROJECTS_DATA = {
             id: "portfolio-template",
             title: "🚀 Portfolio Template - GitHub Pages",
             subtitle: "Template Moderno para Desenvolvedores",
-            description: "Modelo de portfolio profissional moderno e responsivo, desenvolvido com HTML5, CSS3 e JavaScript vanilla.",
+            description: "Modelo de portfolio profissional moderno e responsivo, desenvolvido com HTML5, CSS3 e JavaScript Vanilla.",
             technologies: ["HTML5", "CSS3", "JavaScript", "Vanilla JS", "SEO", "GitHub Pages", "Responsive Design", "CSS Grid", "Flexbox"],
             links: [
                 { name: "⭐ Repositório", url: "https://github.com/alvarofonteles/alvarofonteles.github.io" },
@@ -15,8 +15,7 @@ const PROJECTS_DATA = {
             featured: true,
             status: "completed",
             images: [
-                "/template/assets/images/projects/badges/portfolio-badge.svg",
-                "/template/assets/images/projects/badges/github-sponsors-badge.svg"
+                "/template/assets/images/projects/badges/portfolio-badge.svg"
             ]
         },
         // Projetos Data Engineering
@@ -25,17 +24,14 @@ const PROJECTS_DATA = {
             title: "🎲 Projetos Técnicos",            
             subtitle: "Implementações com Tecnologias Modernas",
             description: "Portfólio de projetos desenvolvidos com Python, processamento de dados e soluções em cloud.",
-            technologies: ["Python", "Pandas", "PySpark", "Delta Lake", "AWS", "Airflow", "dbt", "Databricks"],
+            technologies: ["Python", "Pandas", "PySpark", "Databricks", "Delta Lake", "Lakehouse", "AWS", "Airflow", "dbt"],
             links: [
                 { name: "🚀 Ver Projetos", url: "/projects" }                
             ],
             featured: true,
             status: "in-progress",
             images: [
-                "/template/assets/images/projects/badges/python-badge.svg",
-                "/template/assets/images/projects/badges/pyspark-advanced-badge.svg",
-                "/template/assets/images/projects/badges/delta-lake-badge.svg",
-                "/template/assets/images/projects/badges/aws-badge.svg"
+                "/template/assets/images/projects/badges/python-badge.svg"
             ]
         }
     ],

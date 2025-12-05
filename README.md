@@ -63,8 +63,6 @@ Modelo de portfolio profissional moderno e responsivo, desenvolvido com **HTML5,
 portfolio-template/
 │
 ├── 📄 index.html              # Página principal (implementação exemplo)
-├── 📁 .github/                # GitHub configurations
-│   └── 📄 FUNDING.yml         # Sponsorship configuration
 ├── 📁 template/               # Base do template reutilizável
 │   └── 📁 assets/
 │       ├── 📁 css/
@@ -96,7 +94,6 @@ portfolio-template/
 │                   ├── delta-lake-badge.svg
 │                   ├── email-badge.svg
 │                   ├── github-badge.svg
-│                   ├── github-sponsors-badge.svg
 │                   ├── linkedin-badge.svg
 │                   ├── portfolio-badge.svg
 │                   ├── pyspark-advanced-badge.svg
@@ -208,6 +205,6 @@ Este projeto está sob a licença MIT.
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.  
 
-[![GitHub](https://img.shields.io/badge/GitHub-%40alvarofonteles-000000?logo=github)](https://github.com/alvarofonteles/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%40alvarofonteles-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/alvarofonteles) [![Sponsor](https://img.shields.io/badge/Sponsor-%40alvarofonteles-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/alvarofonteles) 
+[![GitHub](https://img.shields.io/badge/GitHub-%40alvarofonteles-000000?logo=github)](https://github.com/alvarofonteles/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-in/alvarofonteles-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/alvarofonteles) 
 
 *"Um template moderno para desenvolvedores modernos"* 🚀
